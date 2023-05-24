@@ -1,0 +1,165 @@
+plugins {
+    id 'fabric-loom' version '0.12-SNAPSHOT'
+    id 'maven-publish'
+}
+
+version = project.mod_version
+group = project.maven_group
+
+repositories {
+    // Add repositories to retrieve artifacts from in here.
+    // You should only use this when depending on other mods because
+    // Loom adds the essential maven repositories to download Minecraft and libraries from automatically.
+    // See https://docs.gradle.org/current/userguide/declaring_repositories.html
+    // for more information about repositories.
+    exclusiveContent {
+        forRepository {
+            maven {
+                name = "Modrinth"
+                url = "https://api.modrinth.com/maven"
+            }
+        }
+        filter {
+            includeGroup "maven.modrinth"
+        }
+    }
+    maven {
+        url "https://raw.githubusercontent.com/Aton-Kish/mcmod/maven"
+    }
+    // ModMenu (Reinforced Core deps)
+    maven {
+        url "https://maven.terraformersmc.com/releases/"
+    }
+
+    // Cloth Config (Reinforced Core deps)
+    maven {
+        url "https://maven.shedaniel.me/"
+    }
+
+    // Quick Shulker
+    maven {
+        url "https://maven.kyrptonaught.dev"
+    }
+
+    // Shulker Box Tooltip
+    maven {
+        url "https://maven.misterpemodder.com/libs-release"
+    }
+
+    // Fabric ASM (Shulker Box Tooltip deps)
+    maven {
+        url "https://jitpack.io"
+    }
+
+
+}
+
+dependencies {
+    // To change the versions see the gradle.properties file
+    minecraft "com.mojang:minecraft:${project.minecraft_version}"
+    mappings loom.layered {
+        officialMojangMappings()
+        signatureFix("net.fabricmc:yarn:${project.yarn_mappings}:v2")
+    }
+    modImplementation "net.fabricmc:fabric-loader:${project.loader_version}"
+
+        // Fabric API. This is technically optional, but you probably want it anyway.
+    modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
+
+
+    modImplementation "maven.modrinth:pOQTcQmj:${project.charm_version}"
+    modImplementation "maven.modrinth:reinforced-shulker-boxes:${project.reinforced_shulkers_version}"
+
+    implementation 'com.google.code.findbugs:jsr305:3.0.2'
+
+
+    //more Charm stuff
+    implementation "com.moandjiezana.toml:toml4j:${project.toml4j_version}"
+    implementation "com.electronwill.night-config:core:${project.tomlnc_version}"
+    implementation "com.electronwill.night-config:toml:${project.tomlnc_version}"
+
+    include "com.moandjiezana.toml:toml4j:${project.toml4j_version}"
+    include "com.electronwill.night-config:core:${project.tomlnc_version}"
+    include "com.electronwill.night-config:toml:${project.tomlnc_version}"
+
+    //Reinforced shulkers stuff
+    modImplementation "atonkish.reinfcore:reinforced-core:${project.reinforced_core_version}"
+    include "atonkish.reinfcore:reinforced-core:${project.reinforced_core_version}"
+
+    // Reinforced Chests
+    modImplementation "atonkish.reinfchest:reinforced-chests:${project.reinforced_chests_version}"
+
+    // Quick Shulker
+    modImplementation "net.kyrptonaught:quickshulker:${project.quick_shulker_version}"
+    // Quick Shulker deps
+    modImplementation "net.kyrptonaught:shulkerutils:${project.shulkerutils_version}"
+
+    // Shulker Box Tooltip
+    modImplementation "com.misterpemodder:shulkerboxtooltip-fabric:${project.shulker_box_tooltip_version}"
+
+
+}
+
+processResources {
+    inputs.property "version", project.version
+    inputs.property "minecraft_version", project.minecraft_version
+    inputs.property "loader_version", project.loader_version
+    inputs.property "charm_version", project.charm_version
+    inputs.property "reinforced_shulkers_version", project.reinforced_shulkers_version
+    filteringCharset "UTF-8"
+
+    filesMatching("fabric.mod.json") {
+        expand "version": project.version,
+                "minecraft_version": project.minecraft_version,
+                "loader_version": project.loader_version,
+                "charm_version": project.charm_version,
+                "reinforced_shulkers_version": project.reinforced_shulkers_version
+    }
+}
+
+def targetJavaVersion = 17
+tasks.withType(JavaCompile).configureEach {
+    // ensure that the encoding is set to UTF-8, no matter what the system default is
+    // this fixes some edge cases with special characters not displaying correctly
+    // see http://yodaconditions.net/blog/fix-for-java-file-encoding-problems-with-gradle.html
+    // If Javadoc is generated, this must be specified in that task too.
+    it.options.encoding = "UTF-8"
+    if (targetJavaVersion >= 10 || JavaVersion.current().isJava10Compatible()) {
+        it.options.release = targetJavaVersion
+    }
+}
+
+java {
+    def javaVersion = JavaVersion.toVersion(targetJavaVersion)
+    if (JavaVersion.current() < javaVersion) {
+        toolchain.languageVersion = JavaLanguageVersion.of(targetJavaVersion)
+    }
+    archivesBaseName = project.archives_base_name
+    // Loom will automatically attach sourcesJar to a RemapSourcesJar task and to the "build" task
+    // if it is present.
+    // If you remove this line, sources will not be generated.
+    withSourcesJar()
+}
+
+jar {
+    from("LICENSE") {
+        rename { "${it}_${project.archivesBaseName}"}
+    }
+}
+
+// configure the maven publication
+publishing {
+    publications {
+        mavenJava(MavenPublication) {
+            from components.java
+        }
+    }
+
+    // See https://docs.gradle.org/current/userguide/publishing_maven.html for information on how to set up publishing.
+    repositories {
+        // Add repositories to publish to here.
+        // Notice: This block does NOT have the same function as the block in the top level.
+        // The repositories here will be used for publishing your artifact, not for
+        // retrieving dependencies.
+    }
+}

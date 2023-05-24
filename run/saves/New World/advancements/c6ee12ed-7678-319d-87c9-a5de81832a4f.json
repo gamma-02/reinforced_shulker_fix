@@ -1,0 +1,129 @@
+{
+  "minecraft:recipes/misc/charcoal": {
+    "criteria": {
+      "has_log": "2023-05-23 17:21:23 -0700"
+    },
+    "done": true
+  },
+  "charm:core/smithing": {
+    "criteria": {
+      "player_joined": "2023-05-23 17:20:54 -0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/transportation/rail": {
+    "criteria": {
+      "has_minecart": "2023-05-23 17:21:44 -0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/oak_planks": {
+    "criteria": {
+      "has_logs": "2023-05-23 17:21:23 -0700"
+    },
+    "done": true
+  },
+  "charm:core/tweaks": {
+    "criteria": {
+      "player_joined": "2023-05-23 17:20:54 -0700"
+    },
+    "done": true
+  },
+  "reinfshulker:recipes/decorations/iron_shulker_box": {
+    "criteria": {
+      "has_copper_shulker_box": "2023-05-23 17:21:30 -0700"
+    },
+    "done": true
+  },
+  "charm:core/root": {
+    "criteria": {
+      "player_joined": "2023-05-23 17:20:54 -0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/transportation/hopper_minecart": {
+    "criteria": {
+      "has_minecart": "2023-05-23 17:21:44 -0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/chest": {
+    "criteria": {
+      "has_lots_of_items": "2023-05-23 17:21:45 -0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/transportation/activator_rail": {
+    "criteria": {
+      "has_rail": "2023-05-23 17:21:42 -0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/transportation/detector_rail": {
+    "criteria": {
+      "has_rail": "2023-05-23 17:21:42 -0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/transportation/powered_rail": {
+    "criteria": {
+      "has_rail": "2023-05-23 17:21:42 -0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/oak_wood": {
+    "criteria": {
+      "has_log": "2023-05-23 17:21:23 -0700"
+    },
+    "done": true
+  },
+  "charm:core/world": {
+    "criteria": {
+      "player_joined": "2023-05-23 17:20:54 -0700"
+    },
+    "done": true
+  },
+  "charm:core/mobs": {
+    "criteria": {
+      "player_joined": "2023-05-23 17:20:54 -0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/transportation/tnt_minecart": {
+    "criteria": {
+      "has_minecart": "2023-05-23 17:21:44 -0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/transportation/furnace_minecart": {
+    "criteria": {
+      "has_minecart": "2023-05-23 17:21:44 -0700"
+    },
+    "done": true
+  },
+  "charm:core/tools": {
+    "criteria": {
+      "player_joined": "2023-05-23 17:20:54 -0700"
+    },
+    "done": true
+  },
+  "charm:core/automation": {
+    "criteria": {
+      "player_joined": "2023-05-23 17:20:54 -0700"
+    },
+    "done": true
+  },
+  "charm:core/decoration": {
+    "criteria": {
+      "player_joined": "2023-05-23 17:20:54 -0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/transportation/chest_minecart": {
+    "criteria": {
+      "has_minecart": "2023-05-23 17:21:44 -0700"
+    },
+    "done": true
+  },
+  "DataVersion": 3120
+}

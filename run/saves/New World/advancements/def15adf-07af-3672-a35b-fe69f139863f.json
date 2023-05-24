@@ -1,0 +1,93 @@
+{
+  "charm:core/smithing": {
+    "criteria": {
+      "player_joined": "2023-05-23 18:10:17 -0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/transportation/rail": {
+    "criteria": {
+      "has_minecart": "2023-05-23 18:10:17 -0700"
+    },
+    "done": true
+  },
+  "charm:core/tweaks": {
+    "criteria": {
+      "player_joined": "2023-05-23 18:10:17 -0700"
+    },
+    "done": true
+  },
+  "reinfshulker:recipes/decorations/iron_shulker_box": {
+    "criteria": {
+      "has_copper_shulker_box": "2023-05-23 18:10:17 -0700"
+    },
+    "done": true
+  },
+  "charm:core/root": {
+    "criteria": {
+      "player_joined": "2023-05-23 18:10:17 -0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/transportation/hopper_minecart": {
+    "criteria": {
+      "has_minecart": "2023-05-23 18:10:17 -0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/chest": {
+    "criteria": {
+      "has_lots_of_items": "2023-05-23 18:10:17 -0700"
+    },
+    "done": true
+  },
+  "charm:core/world": {
+    "criteria": {
+      "player_joined": "2023-05-23 18:10:17 -0700"
+    },
+    "done": true
+  },
+  "charm:core/mobs": {
+    "criteria": {
+      "player_joined": "2023-05-23 18:10:17 -0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/transportation/tnt_minecart": {
+    "criteria": {
+      "has_minecart": "2023-05-23 18:10:17 -0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/transportation/furnace_minecart": {
+    "criteria": {
+      "has_minecart": "2023-05-23 18:10:17 -0700"
+    },
+    "done": true
+  },
+  "charm:core/tools": {
+    "criteria": {
+      "player_joined": "2023-05-23 18:10:17 -0700"
+    },
+    "done": true
+  },
+  "charm:core/automation": {
+    "criteria": {
+      "player_joined": "2023-05-23 18:10:17 -0700"
+    },
+    "done": true
+  },
+  "charm:core/decoration": {
+    "criteria": {
+      "player_joined": "2023-05-23 18:10:17 -0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/transportation/chest_minecart": {
+    "criteria": {
+      "has_minecart": "2023-05-23 18:10:17 -0700"
+    },
+    "done": true
+  },
+  "DataVersion": 3120
+}

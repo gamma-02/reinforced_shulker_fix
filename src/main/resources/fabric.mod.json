@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "id": "shulker_fix",
+  "version": "${version}",
+  "name": "Shulker Fix",
+  "description": "",
+  "authors": [],
+  "contact": {
+    "repo": "https://github.com/gamma-02/shulker_fix"
+  },
+  "license": "MIT",
+  "icon": "If you think I do these you'd be wrong :D",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "net.gamma02.shulker_fix.ShulkerFix"
+    ]
+  },
+  "mixins": [
+    "shulker_fix.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}",
+    "charm": "${charm_version}",
+    "reinfshulker": "${reinforced_shulkers_version}"
+  }
+}
