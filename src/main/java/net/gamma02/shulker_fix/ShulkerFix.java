@@ -6,7 +6,10 @@ import net.fabricmc.api.ModInitializer;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.nbt.CompoundTag;
+import net.minecraft.server.MinecraftServer;
+import net.minecraft.server.level.ServerLevel;
 import net.minecraft.sounds.SoundEvents;
+import net.minecraft.tags.BlockTags;
 import net.minecraft.world.SimpleContainer;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.SlotAccess;
@@ -17,19 +20,44 @@ import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 
+import net.minecraft.world.level.ItemLike;
+import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.ShulkerBoxBlock;
 import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.entity.ShulkerBoxBlockEntity;
 import svenhjol.charm.api.event.StackItemOnItemCallback.Direction;
+import svenhjol.charm.helper.TagHelper;
 import svenhjol.charm.module.inventory_tidying.InventoryTidyingHandler;
 
-import static svenhjol.charm.module.shulker_box_drag_drop.ShulkerBoxDragDrop.BLACKLIST;
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.List;
 
+/**
+ * THIS CODE IS BASED OFF OF <a href="https://github.com/svenhjol/Charm/">CHARM</a>, PROVIDED "AS-IS" BY <a href="https://github.com/svenhjol/">svenhjol</a>
+ */
 
 public class ShulkerFix implements ModInitializer {
 
+    public static final List<ItemLike> BLACKLIST = new ArrayList();
+
+
     public ShulkerFix(){
+
+    }
+
+    public static void handleWorldLoad(MinecraftServer server, ServerLevel level) {
+        if (level.dimension() == Level.OVERWORLD) {
+            Iterator var3 = TagHelper.getBlockValues(BlockTags.SHULKER_BOXES).iterator();
+
+            while(var3.hasNext()) {
+                Block block = (Block)var3.next();
+                if (!BLACKLIST.contains(block)) {
+                    BLACKLIST.add(block);
+                }
+            }
+        }
 
     }
 
@@ -51,6 +79,12 @@ public class ShulkerFix implements ModInitializer {
             return false;
         }
 
+
+
+        if(!item.canFitInsideContainerItems()){//extra check for things like shulker boxes
+            return false;
+        }
+
         CompoundTag shulkerBoxTag = BlockItem.getBlockEntityData(dest);
         BlockEntity blockEntity;
 
@@ -65,10 +99,16 @@ public class ShulkerFix implements ModInitializer {
         if (!(blockEntity instanceof ShulkerBoxBlockEntity shulkerBox)) {
             return false;
         }
+
+
         int size = ShulkerBoxBlockEntity.CONTAINER_SIZE;
         if(blockEntity instanceof ReinforcedShulkerBoxBlockEntity reifShulkerBox){
             size = ReinforcedStorageScreenModel.getContainerInventorySize(reifShulkerBox.getMaterial(), false/*double shulker boxes KJDSKFLSJFKLDJLFKJS*/);
         }
+
+//        if((source.getCount() != 1){
+//            return false;
+//        }
 
 
         // populate the container

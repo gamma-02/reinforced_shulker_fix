@@ -2,6 +2,7 @@ package net.gamma02.shulker_fix.mixin;
 
 
 import net.fabricmc.fabric.api.event.Event;
+import net.fabricmc.fabric.api.event.lifecycle.v1.ServerWorldEvents;
 import net.gamma02.shulker_fix.ShulkerFix;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
@@ -13,14 +14,16 @@ import svenhjol.charm.module.shulker_box_drag_drop.ShulkerBoxDragDrop;
 public class ShulkerBoxDragDropModuleMixin<T> {
 
 
-    @Redirect(method = "runWhenEnabled", at = @At(value="INVOKE", target = "Lnet/fabricmc/fabric/api/event/Event;register(Ljava/lang/Object;)V", ordinal = 0), remap = false)
+    @Redirect(method = "runWhenEnabled", at = @At(value="INVOKE", target = "Lnet/fabricmc/fabric/api/event/Event;register(Ljava/lang/Object;)V"), remap = false)
     public void injectFix(Event<T> instance, T t){
-        if(instance != StackItemOnItemCallback.EVENT){
-            System.out.println("whops! redirected a call to the wrong event! registering... name: " + instance.toString());
-            instance.register(t);
-            return;
+        if(instance == StackItemOnItemCallback.EVENT){
+            StackItemOnItemCallback.EVENT.register(ShulkerFix::handleInventoryInteraction);
+            System.out.println("SHULKER BOX BEHAVIOR ADDED!");
+        }else if(instance == ServerWorldEvents.LOAD){
+            ServerWorldEvents.LOAD.register(ShulkerFix::handleWorldLoad);
+            System.out.println("WORLD LOAD BEHAVIOR ADDED!");
+
         }
-        StackItemOnItemCallback.EVENT.register(ShulkerFix::handleInventoryInteraction);
 
 
     }
