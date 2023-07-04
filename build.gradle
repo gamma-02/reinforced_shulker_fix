@@ -97,6 +97,11 @@ dependencies {
     // Shulker Box Tooltip
     modImplementation "com.misterpemodder:shulkerboxtooltip-fabric:${project.shulker_box_tooltip_version}"
 
+//    modImplementation "maven.modrinth:enchantedshulkers:${project.enchanted_shulker_verison}"
+//
+//    modImplementation "maven.modrinth:cloth-config:10.0.96+fabric"
+
+
 
 }
 
@@ -106,6 +111,7 @@ processResources {
     inputs.property "loader_version", project.loader_version
     inputs.property "charm_version", project.charm_version
     inputs.property "reinforced_shulkers_version", project.reinforced_shulkers_version
+    inputs.property "enchanted_shulker_verison", project.enchanted_shulker_verison
     filteringCharset "UTF-8"
 
     filesMatching("fabric.mod.json") {
@@ -113,7 +119,8 @@ processResources {
                 "minecraft_version": project.minecraft_version,
                 "loader_version": project.loader_version,
                 "charm_version": project.charm_version,
-                "reinforced_shulkers_version": project.reinforced_shulkers_version
+                "reinforced_shulkers_version": project.reinforced_shulkers_version,
+                "enchanted_shulker_verison": project.enchanted_shulker_verison
     }
 }
 

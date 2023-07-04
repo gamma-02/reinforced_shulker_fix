@@ -1,8 +1,11 @@
-[18:09:22] [main/INFO] (FabricLoader/GameProvider) Loading Minecraft 1.19.2 with Fabric Loader 0.14.20
-[18:09:22] [main/INFO] (FabricLoader) Loading 58 mods:
+[16:23:52] [main/INFO] (FabricLoader/GameProvider) Loading Minecraft 1.19.2 with Fabric Loader 0.14.20
+[16:23:53] [main/INFO] (FabricLoader) Loading 61 mods:
 	- charm 4.4.4
 	- cloth-basic-math 0.6.1
 	- cloth-config 8.2.88
+	- enchantedshulkers 1.1.2
+	   |-- com_moandjiezana_toml_toml4j 0.7.2
+	   \-- mm 2.3
 	- fabric-api 0.76.0+1.19.2
 	- fabric-api-base 0.4.15+8f4e8eb390
 	- fabric-api-lookup-api-v1 1.6.14+93d8cb8290
@@ -55,785 +58,570 @@
 	- reinfchest 2.2.0+1.19
 	- reinfcore 3.0.3+1.19
 	- reinfshulker 2.2.0+1.19
-	- shulker_fix 1.0-SNAPSHOT
+	- shulker_fix 1.0
 	- shulkerboxtooltip 3.1.3+1.19.2
 	- shulkerutils 1.0.4-1.19
-[18:09:22] [main/INFO] (FabricLoader/Mixin) SpongePowered MIXIN Subsystem Version=0.8.5 Source=file:/Users/danielposselt/.gradle/caches/modules-2/files-2.1/net.fabricmc/sponge-mixin/0.12.5+mixin.0.8.5/8d31fb97c3e0cd7c8dad3441851c523bcfae6d8e/sponge-mixin-0.12.5+mixin.0.8.5.jar Service=Knot/Fabric Env=CLIENT
-[18:09:22] [main/INFO] (FabricLoader/Mixin) Loaded Fabric development mappings for mixin remapper!
-[18:09:22] [main/INFO] (FabricLoader/Mixin) Compatibility level set to JAVA_17
-[18:09:23] [main/INFO] (BaseMixinConfigPlugin) [MixinConfig] Adding improved_mineshafts.GenerateMineshaftPiecesMixin
-[18:09:23] [main/INFO] (BaseMixinConfigPlugin) [MixinConfig] Adding weathering_iron.TickIronBlockMixin
-[18:09:23] [main/INFO] (BaseMixinConfigPlugin) [MixinConfig] Adding event.UpdateAnvilMixin
-[18:09:23] [main/INFO] (BaseMixinConfigPlugin) [MixinConfig] Adding atlases.DrawAtlasOnCartographyTableMixin
-[18:09:23] [main/INFO] (BaseMixinConfigPlugin) [MixinConfig] Adding amethyst_note_block.AddNoteBlockInstrumentMixin
-[18:09:23] [main/INFO] (BaseMixinConfigPlugin) [MixinConfig] Adding event.AddEntityClientMixin
-[18:09:23] [main/INFO] (BaseMixinConfigPlugin) [MixinConfig] Adding auto_restock.AddStatWhenParrotConsumedMixin
-[18:09:23] [main/INFO] (BaseMixinConfigPlugin) [MixinConfig] Adding allow_too_expensive.RemoveTooExpensiveMixin
-[18:09:23] [main/INFO] (BaseMixinConfigPlugin) [MixinConfig] Adding event.ApplyBeaconEffectsMixin
-[18:09:23] [main/INFO] (BaseMixinConfigPlugin) [MixinConfig] Adding core.OverrideBundleTooltipGridsizeMixin
-[18:09:23] [main/INFO] (BaseMixinConfigPlugin) [MixinConfig] Adding block_of_ender_pearls.PreventRandomTeleportMixin
-[18:09:23] [main/INFO] (BaseMixinConfigPlugin) [MixinConfig] Adding event.PlayerDropInventoryMixin
-[18:09:23] [main/INFO] (BaseMixinConfigPlugin) [MixinConfig] Adding variant_chests.FetchCustomChestTextureMixin
-[18:09:23] [main/INFO] (BaseMixinConfigPlugin) [MixinConfig] Adding event.ClientSpawnEntityMixin
-[18:09:23] [main/INFO] (BaseMixinConfigPlugin) [MixinConfig] Adding woodcutters.GetCorrectCategoryMixin
-[18:09:23] [main/INFO] (BaseMixinConfigPlugin) [MixinConfig] Adding kilns.AddRecipeCategoryMixin
-[18:09:23] [main/INFO] (BaseMixinConfigPlugin) [MixinConfig] Adding event.CheckAnvilRepairMixin
-[18:09:23] [main/INFO] (BaseMixinConfigPlugin) [MixinConfig] Adding stronger_anvils.ReduceAnvilDamageMixin
-[18:09:23] [main/INFO] (BaseMixinConfigPlugin) [MixinConfig] Adding event.GrindstoneMenuOutputMixin
-[18:09:23] [main/INFO] (BaseMixinConfigPlugin) [MixinConfig] Adding event.GrindstoneMenuMixin
-[18:09:23] [main/INFO] (BaseMixinConfigPlugin) [MixinConfig] Adding husks_spawn_underground.AllowSpawningAnywhereMixin
-[18:09:23] [main/WARN] (BaseMixinConfigPlugin) [MixinConfig] Not adding no_cured_villager_discount.BypassReputationGossipMixin
-[18:09:23] [main/INFO] (BaseMixinConfigPlugin) [MixinConfig] Adding weathering_iron.DispenseHoneycombIronMixin
-[18:09:23] [main/INFO] (BaseMixinConfigPlugin) [MixinConfig] Adding auto_restock.AddStatWhenAnimalConsumedMixin
-[18:09:23] [main/INFO] (BaseMixinConfigPlugin) [MixinConfig] Adding show_repair_cost.AddRepairCostToTooltipMixin
-[18:09:23] [main/INFO] (BaseMixinConfigPlugin) [MixinConfig] Adding variant_chests.RenderVariantChestBoatMixin
-[18:09:23] [main/INFO] (BaseMixinConfigPlugin) [MixinConfig] Adding open_both_doors.ReactOnDoorOpenedMixin
-[18:09:23] [main/INFO] (BaseMixinConfigPlugin) [MixinConfig] Adding chickens_drop_feathers.DropFeatherMixin
-[18:09:23] [main/INFO] (BaseMixinConfigPlugin) [MixinConfig] Adding event.EntityDropItemsMixin
-[18:09:23] [main/INFO] (BaseMixinConfigPlugin) [MixinConfig] Requiring helper.LoadCustomModelPartsMixin
-[18:09:23] [main/INFO] (BaseMixinConfigPlugin) [MixinConfig] Adding event.PlayerSaveDataMixin
-[18:09:23] [main/INFO] (BaseMixinConfigPlugin) [MixinConfig] Adding event.PlayerDieMixin
-[18:09:23] [main/INFO] (BaseMixinConfigPlugin) [MixinConfig] Adding totem_of_preserving.DestroyBlockMixin
-[18:09:23] [main/WARN] (BaseMixinConfigPlugin) [MixinConfig] Not adding no_treasure_enchantment_trading.CheckIfTradeableMixin
-[18:09:23] [main/INFO] (BaseMixinConfigPlugin) [MixinConfig] Adding auto_restock.AddStatWhenCompostedMixin
-[18:09:23] [main/INFO] (BaseMixinConfigPlugin) [MixinConfig] Adding snow_accumulation.AllowBlockReplaceMixin
-[18:09:23] [main/INFO] (BaseMixinConfigPlugin) [MixinConfig] Adding weathering_iron.WaxedIronNoteBlockMixin
-[18:09:23] [main/INFO] (BaseMixinConfigPlugin) [MixinConfig] Adding snow_accumulation.PlaceMoreSnowMixin
-[18:09:23] [main/INFO] (BaseMixinConfigPlugin) [MixinConfig] Adding no_crop_trampling.PreventTramplingMixin
-[18:09:23] [main/INFO] (BaseMixinConfigPlugin) [MixinConfig] Adding gentle_potion_particles.RenderTranslucentParticleMixin
-[18:09:23] [main/WARN] (BaseMixinConfigPlugin) [MixinConfig] Not adding no_chat_verified_nag.DisableToastMixin
-[18:09:23] [main/INFO] (BaseMixinConfigPlugin) [MixinConfig] Adding no_spyglass_scope.RemoveSpyglassHudMixin
-[18:09:23] [main/INFO] (BaseMixinConfigPlugin) [MixinConfig] Adding more_portal_frames.AddValidPortalFrameBlocksMixin
-[18:09:23] [main/INFO] (BaseMixinConfigPlugin) [MixinConfig] Adding more_portal_frames.LightPortalBlockMixin
-[18:09:23] [main/INFO] (BaseMixinConfigPlugin) [MixinConfig] Adding core.AllowZeroCostAnvilRecipesMixin
-[18:09:23] [main/WARN] (BaseMixinConfigPlugin) [MixinConfig] Not adding respawn_anchor_in_the_end.CheckIfCanSetSpawnMixin
-[18:09:23] [main/INFO] (BaseMixinConfigPlugin) [MixinConfig] Adding event.LocalPlayerTickMixin
-[18:09:23] [main/INFO] (BaseMixinConfigPlugin) [MixinConfig] Adding woodcutters.GetCorrectCategoriesMixin
-[18:09:23] [main/INFO] (BaseMixinConfigPlugin) [MixinConfig] Adding snow_accumulation.PreventSnowMeltingMixin
-[18:09:23] [main/INFO] (BaseMixinConfigPlugin) [MixinConfig] Adding totem_works_from_inventory.CheckInventoryMixin
-[18:09:23] [main/INFO] (BaseMixinConfigPlugin) [MixinConfig] Adding allow_too_expensive.StopShowingTooExpensiveMixin
-[18:09:23] [main/INFO] (BaseMixinConfigPlugin) [MixinConfig] Adding woodcutters.AddRecipeBookTypeMixin
-[18:09:23] [main/INFO] (BaseMixinConfigPlugin) [MixinConfig] Adding event.RenderGuiMixin
-[18:09:23] [main/INFO] (BaseMixinConfigPlugin) [MixinConfig] Adding woodcutters.AddRecipeCategoryMixin
-[18:09:23] [main/INFO] (BaseMixinConfigPlugin) [MixinConfig] Adding event.EntityHurtMixin
-[18:09:23] [main/INFO] (BaseMixinConfigPlugin) [MixinConfig] Adding extract_enchantments.ShowGrindstoneCostMixin
-[18:09:23] [main/INFO] (BaseMixinConfigPlugin) [MixinConfig] Adding event.ScrollMouseMixin
-[18:09:23] [main/INFO] (BaseMixinConfigPlugin) [MixinConfig] Adding event.ItemTooltipImageMixin
-[18:09:23] [main/INFO] (BaseMixinConfigPlugin) [MixinConfig] Adding event.RenderHeldItemMixin
-[18:09:23] [main/INFO] (BaseMixinConfigPlugin) [MixinConfig] Adding strays_spawn_underground.AllowSpawningAnywhereMixin
-[18:09:23] [main/INFO] (BaseMixinConfigPlugin) [MixinConfig] Adding kilns.GetCorrectCategoryMixin
-[18:09:23] [main/INFO] (BaseMixinConfigPlugin) [MixinConfig] Adding event.PlaySoundMixin
-[18:09:23] [main/INFO] (BaseMixinConfigPlugin) [MixinConfig] Adding weathering_iron.WaxedIronGolemBuildingMixin
-[18:09:23] [main/INFO] (BaseMixinConfigPlugin) [MixinConfig] Adding variant_ladders.ClimbTrapdoorMixin
-[18:09:23] [main/INFO] (BaseMixinConfigPlugin) [MixinConfig] Adding event.StackItemOnItemMixin
-[18:09:23] [main/INFO] (BaseMixinConfigPlugin) [MixinConfig] Adding helper.CheckEnchantingPowerMixin
-[18:09:23] [main/INFO] (BaseMixinConfigPlugin) [MixinConfig] Adding stackable_stews.FinishEatingStewMixin
-[18:09:23] [main/INFO] (BaseMixinConfigPlugin) [MixinConfig] Adding event.AddEntityServerMixin
-[18:09:23] [main/INFO] (BaseMixinConfigPlugin) [MixinConfig] Adding event.GrindstoneMenuInputMixin
-[18:09:23] [main/INFO] (BaseMixinConfigPlugin) [MixinConfig] Adding helper.FilterAdvancementsMixin
-[18:09:23] [main/INFO] (BaseMixinConfigPlugin) [MixinConfig] Adding extra_boats.GetBoatItemMixin
-[18:09:23] [main/INFO] (BaseMixinConfigPlugin) [MixinConfig] Adding colored_nether_portals.HandleInsidePortalMixin
-[18:09:23] [main/INFO] (BaseMixinConfigPlugin) [MixinConfig] Adding helper.HoldRecipeManagerMixin
-[18:09:23] [main/INFO] (BaseMixinConfigPlugin) [MixinConfig] Adding variant_chests.AddChestBoatTypeMixin
-[18:09:23] [main/INFO] (BaseMixinConfigPlugin) [MixinConfig] Adding collection_enchantment.TryBreakBlockMixin
-[18:09:23] [main/INFO] (BaseMixinConfigPlugin) [MixinConfig] Adding event.StitchTextureMixin
-[18:09:23] [main/INFO] (BaseMixinConfigPlugin) [MixinConfig] Adding variant_chests.GetChestBoatItemMixin
-[18:09:23] [main/INFO] (BaseMixinConfigPlugin) [MixinConfig] Adding kilns.GetCorrectCategoriesMixin
-[18:09:23] [main/INFO] (BaseMixinConfigPlugin) [MixinConfig] Adding event.SetupGuiMixin
-[18:09:23] [main/INFO] (BaseMixinConfigPlugin) [MixinConfig] Adding variant_chests.VariantChestBoatMixin
-[18:09:23] [main/INFO] (BaseMixinConfigPlugin) [MixinConfig] Adding event.ServerPlayerTickMixin
-[18:09:23] [main/INFO] (BaseMixinConfigPlugin) [MixinConfig] Adding aerial_affinity_enchantment.UndoDestroySpeedPenaltyMixin
-[18:09:23] [main/INFO] (BaseMixinConfigPlugin) [MixinConfig] Adding no_potion_glint.CheckPotionHasGlintMixin
-[18:09:23] [main/INFO] (BaseMixinConfigPlugin) [MixinConfig] Adding atlases.ScaleAtlasesOnCartographyTableMixin
-[18:09:23] [main/INFO] (BaseMixinConfigPlugin) [MixinConfig] Adding event.PlayerLoadDataMixin
-[18:09:23] [main/INFO] (BaseMixinConfigPlugin) [MixinConfig] Adding atlases.CheckContainsMapsMixin
-[18:09:23] [main/INFO] (BaseMixinConfigPlugin) [MixinConfig] Adding event.AddEntityManagerMixin
-[18:09:23] [main/INFO] (BaseMixinConfigPlugin) [MixinConfig] Adding event.EntityJumpMixin
-[18:09:23] [main/INFO] (BaseMixinConfigPlugin) [MixinConfig] Adding helper.TranslateServerComponentMixin
-[18:09:23] [main/INFO] (BaseMixinConfigPlugin) [MixinConfig] Adding event.RenderTooltipMixin
-[18:09:23] [main/INFO] (BaseMixinConfigPlugin) [MixinConfig] Adding kilns.AddRecipeBookTypeMixin
-[18:09:23] [main/INFO] (BaseMixinConfigPlugin) [MixinConfig] Adding event.BlockColorRegisterMixin
-[18:09:23] [main/INFO] (BaseMixinConfigPlugin) [MixinConfig] Adding beekeepers.AddTicketsToBeehiveMixin
-[18:09:23] [main/INFO] (BaseMixinConfigPlugin) [MixinConfig] Adding stackable_potions.FinishDrinkingPotionMixin
-[18:09:23] [main/INFO] (BaseMixinConfigPlugin) [MixinConfig] Adding event.EntityDropXpMixin
-[18:09:23] [main/INFO] (BaseMixinConfigPlugin) [MixinConfig] Adding collection_enchantment.AddDroppedItemToInventoryMixin
-[18:09:23] [main/INFO] (BaseMixinConfigPlugin) [MixinConfig] Adding parrots_stay_on_shoulder.KeepShoulderEntitiesMixin
-[18:09:23] [main/INFO] (BaseMixinConfigPlugin) [MixinConfig] Adding extra_boats.AddBoatTypeMixin
-[18:09:23] [main/INFO] (BaseMixinConfigPlugin) [MixinConfig] Adding extra_boats.GetChestBoatItemMixin
-[18:09:23] [main/INFO] (BaseMixinConfigPlugin) [MixinConfig] Adding event.RenderBlockItemMixin
-[18:09:23] [main/INFO] (BaseMixinConfigPlugin) [MixinConfig] Adding stackable_enchanted_books.FixAnvilBookStackMixin
-[18:09:23] [main/INFO] (BaseMixinConfigPlugin) [MixinConfig] Adding totem_of_preserving.ExplosionMixin
-[18:09:25] [main/INFO] (Minecraft) Building optimized datafixer
-[18:09:27] [Render thread/INFO] (Minecraft) Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
-[18:09:28] [Render thread/ERROR] (Minecraft) Failed to verify authentication
+[16:23:56] [main/INFO] (FabricLoader/Mixin) SpongePowered MIXIN Subsystem Version=0.8.5 Source=file:/C:/Users/gamma/.gradle/caches/modules-2/files-2.1/net.fabricmc/sponge-mixin/0.12.5+mixin.0.8.5/8d31fb97c3e0cd7c8dad3441851c523bcfae6d8e/sponge-mixin-0.12.5+mixin.0.8.5.jar Service=Knot/Fabric Env=CLIENT
+[16:23:56] [main/INFO] (FabricLoader/Mixin) Loaded Fabric development mappings for mixin remapper!
+[16:23:56] [main/INFO] (FabricLoader/Mixin) Compatibility level set to JAVA_16
+[16:23:56] [main/INFO] (FabricLoader/Mixin) Compatibility level set to JAVA_17
+[16:23:56] [main/INFO] (BaseMixinConfigPlugin) [MixinConfig] Adding event.EntityJumpMixin
+[16:23:56] [main/INFO] (BaseMixinConfigPlugin) [MixinConfig] Adding variant_chests.VariantChestBoatMixin
+[16:23:56] [main/INFO] (BaseMixinConfigPlugin) [MixinConfig] Adding event.GrindstoneMenuInputMixin
+[16:23:56] [main/INFO] (BaseMixinConfigPlugin) [MixinConfig] Adding gentle_potion_particles.RenderTranslucentParticleMixin
+[16:23:56] [main/INFO] (BaseMixinConfigPlugin) [MixinConfig] Adding auto_restock.AddStatWhenParrotConsumedMixin
+[16:23:56] [main/INFO] (BaseMixinConfigPlugin) [MixinConfig] Adding colored_nether_portals.HandleInsidePortalMixin
+[16:23:56] [main/INFO] (BaseMixinConfigPlugin) [MixinConfig] Adding event.PlayerLoadDataMixin
+[16:23:56] [main/INFO] (BaseMixinConfigPlugin) [MixinConfig] Adding atlases.CheckContainsMapsMixin
+[16:23:56] [main/INFO] (BaseMixinConfigPlugin) [MixinConfig] Adding event.ApplyBeaconEffectsMixin
+[16:23:56] [main/INFO] (BaseMixinConfigPlugin) [MixinConfig] Adding event.RenderHeldItemMixin
+[16:23:56] [main/INFO] (BaseMixinConfigPlugin) [MixinConfig] Adding weathering_iron.WaxedIronGolemBuildingMixin
+[16:23:56] [main/INFO] (BaseMixinConfigPlugin) [MixinConfig] Adding no_potion_glint.CheckPotionHasGlintMixin
+[16:23:56] [main/INFO] (BaseMixinConfigPlugin) [MixinConfig] Adding event.EntityHurtMixin
+[16:23:56] [main/INFO] (BaseMixinConfigPlugin) [MixinConfig] Adding kilns.GetCorrectCategoryMixin
+[16:23:56] [main/INFO] (BaseMixinConfigPlugin) [MixinConfig] Adding allow_too_expensive.RemoveTooExpensiveMixin
+[16:23:56] [main/INFO] (BaseMixinConfigPlugin) [MixinConfig] Adding woodcutters.GetCorrectCategoriesMixin
+[16:23:56] [main/INFO] (BaseMixinConfigPlugin) [MixinConfig] Adding totem_of_preserving.ExplosionMixin
+[16:23:56] [main/INFO] (BaseMixinConfigPlugin) [MixinConfig] Adding stackable_potions.FinishDrinkingPotionMixin
+[16:23:56] [main/INFO] (BaseMixinConfigPlugin) [MixinConfig] Adding variant_chests.GetChestBoatItemMixin
+[16:23:56] [main/WARN] (BaseMixinConfigPlugin) [MixinConfig] Not adding no_treasure_enchantment_trading.CheckIfTradeableMixin
+[16:23:56] [main/INFO] (BaseMixinConfigPlugin) [MixinConfig] Adding auto_restock.AddStatWhenCompostedMixin
+[16:23:56] [main/INFO] (BaseMixinConfigPlugin) [MixinConfig] Adding helper.TranslateServerComponentMixin
+[16:23:56] [main/INFO] (BaseMixinConfigPlugin) [MixinConfig] Adding collection_enchantment.TryBreakBlockMixin
+[16:23:56] [main/INFO] (BaseMixinConfigPlugin) [MixinConfig] Adding event.AddEntityClientMixin
+[16:23:56] [main/INFO] (BaseMixinConfigPlugin) [MixinConfig] Requiring helper.LoadCustomModelPartsMixin
+[16:23:56] [main/WARN] (BaseMixinConfigPlugin) [MixinConfig] Not adding no_chat_verified_nag.DisableToastMixin
+[16:23:56] [main/INFO] (BaseMixinConfigPlugin) [MixinConfig] Adding helper.CheckEnchantingPowerMixin
+[16:23:56] [main/INFO] (BaseMixinConfigPlugin) [MixinConfig] Adding allow_too_expensive.StopShowingTooExpensiveMixin
+[16:23:56] [main/INFO] (BaseMixinConfigPlugin) [MixinConfig] Adding kilns.AddRecipeBookTypeMixin
+[16:23:56] [main/INFO] (BaseMixinConfigPlugin) [MixinConfig] Adding improved_mineshafts.GenerateMineshaftPiecesMixin
+[16:23:56] [main/INFO] (BaseMixinConfigPlugin) [MixinConfig] Adding variant_ladders.ClimbTrapdoorMixin
+[16:23:56] [main/INFO] (BaseMixinConfigPlugin) [MixinConfig] Adding event.AddEntityServerMixin
+[16:23:56] [main/INFO] (BaseMixinConfigPlugin) [MixinConfig] Adding weathering_iron.WaxedIronNoteBlockMixin
+[16:23:56] [main/INFO] (BaseMixinConfigPlugin) [MixinConfig] Adding parrots_stay_on_shoulder.KeepShoulderEntitiesMixin
+[16:23:56] [main/INFO] (BaseMixinConfigPlugin) [MixinConfig] Adding event.UpdateAnvilMixin
+[16:23:56] [main/INFO] (BaseMixinConfigPlugin) [MixinConfig] Adding woodcutters.AddRecipeBookTypeMixin
+[16:23:56] [main/INFO] (BaseMixinConfigPlugin) [MixinConfig] Adding event.StackItemOnItemMixin
+[16:23:56] [main/INFO] (BaseMixinConfigPlugin) [MixinConfig] Adding snow_accumulation.PreventSnowMeltingMixin
+[16:23:56] [main/INFO] (BaseMixinConfigPlugin) [MixinConfig] Adding event.PlayerDieMixin
+[16:23:56] [main/INFO] (BaseMixinConfigPlugin) [MixinConfig] Adding event.ClientSpawnEntityMixin
+[16:23:56] [main/INFO] (BaseMixinConfigPlugin) [MixinConfig] Adding event.ServerPlayerTickMixin
+[16:23:56] [main/INFO] (BaseMixinConfigPlugin) [MixinConfig] Adding aerial_affinity_enchantment.UndoDestroySpeedPenaltyMixin
+[16:23:56] [main/INFO] (BaseMixinConfigPlugin) [MixinConfig] Adding block_of_ender_pearls.PreventRandomTeleportMixin
+[16:23:56] [main/INFO] (BaseMixinConfigPlugin) [MixinConfig] Adding atlases.DrawAtlasOnCartographyTableMixin
+[16:23:56] [main/INFO] (BaseMixinConfigPlugin) [MixinConfig] Adding stronger_anvils.ReduceAnvilDamageMixin
+[16:23:56] [main/INFO] (BaseMixinConfigPlugin) [MixinConfig] Adding atlases.ScaleAtlasesOnCartographyTableMixin
+[16:23:56] [main/INFO] (BaseMixinConfigPlugin) [MixinConfig] Adding amethyst_note_block.AddNoteBlockInstrumentMixin
+[16:23:56] [main/INFO] (BaseMixinConfigPlugin) [MixinConfig] Adding event.RenderBlockItemMixin
+[16:23:56] [main/INFO] (BaseMixinConfigPlugin) [MixinConfig] Adding husks_spawn_underground.AllowSpawningAnywhereMixin
+[16:23:56] [main/INFO] (BaseMixinConfigPlugin) [MixinConfig] Adding event.RenderTooltipMixin
+[16:23:56] [main/INFO] (BaseMixinConfigPlugin) [MixinConfig] Adding event.PlayerSaveDataMixin
+[16:23:56] [main/INFO] (BaseMixinConfigPlugin) [MixinConfig] Adding variant_chests.RenderVariantChestBoatMixin
+[16:23:56] [main/INFO] (BaseMixinConfigPlugin) [MixinConfig] Adding weathering_iron.DispenseHoneycombIronMixin
+[16:23:56] [main/INFO] (BaseMixinConfigPlugin) [MixinConfig] Adding variant_chests.FetchCustomChestTextureMixin
+[16:23:56] [main/INFO] (BaseMixinConfigPlugin) [MixinConfig] Adding event.StitchTextureMixin
+[16:23:56] [main/INFO] (BaseMixinConfigPlugin) [MixinConfig] Adding event.PlayerDropInventoryMixin
+[16:23:56] [main/INFO] (BaseMixinConfigPlugin) [MixinConfig] Adding extract_enchantments.ShowGrindstoneCostMixin
+[16:23:56] [main/INFO] (BaseMixinConfigPlugin) [MixinConfig] Adding auto_restock.AddStatWhenAnimalConsumedMixin
+[16:23:56] [main/WARN] (BaseMixinConfigPlugin) [MixinConfig] Not adding no_cured_villager_discount.BypassReputationGossipMixin
+[16:23:56] [main/INFO] (BaseMixinConfigPlugin) [MixinConfig] Adding collection_enchantment.AddDroppedItemToInventoryMixin
+[16:23:56] [main/INFO] (BaseMixinConfigPlugin) [MixinConfig] Adding core.OverrideBundleTooltipGridsizeMixin
+[16:23:56] [main/INFO] (BaseMixinConfigPlugin) [MixinConfig] Adding snow_accumulation.AllowBlockReplaceMixin
+[16:23:56] [main/INFO] (BaseMixinConfigPlugin) [MixinConfig] Adding extra_boats.AddBoatTypeMixin
+[16:23:56] [main/INFO] (BaseMixinConfigPlugin) [MixinConfig] Adding woodcutters.AddRecipeCategoryMixin
+[16:23:56] [main/INFO] (BaseMixinConfigPlugin) [MixinConfig] Adding event.ItemTooltipImageMixin
+[16:23:56] [main/INFO] (BaseMixinConfigPlugin) [MixinConfig] Adding event.EntityDropXpMixin
+[16:23:56] [main/INFO] (BaseMixinConfigPlugin) [MixinConfig] Adding totem_works_from_inventory.CheckInventoryMixin
+[16:23:56] [main/INFO] (BaseMixinConfigPlugin) [MixinConfig] Adding open_both_doors.ReactOnDoorOpenedMixin
+[16:23:56] [main/INFO] (BaseMixinConfigPlugin) [MixinConfig] Adding event.AddEntityManagerMixin
+[16:23:56] [main/INFO] (BaseMixinConfigPlugin) [MixinConfig] Adding core.AllowZeroCostAnvilRecipesMixin
+[16:23:56] [main/INFO] (BaseMixinConfigPlugin) [MixinConfig] Adding more_portal_frames.AddValidPortalFrameBlocksMixin
+[16:23:56] [main/INFO] (BaseMixinConfigPlugin) [MixinConfig] Adding event.EntityDropItemsMixin
+[16:23:56] [main/INFO] (BaseMixinConfigPlugin) [MixinConfig] Adding totem_of_preserving.DestroyBlockMixin
+[16:23:56] [main/INFO] (BaseMixinConfigPlugin) [MixinConfig] Adding event.LocalPlayerTickMixin
+[16:23:56] [main/INFO] (BaseMixinConfigPlugin) [MixinConfig] Adding snow_accumulation.PlaceMoreSnowMixin
+[16:23:56] [main/INFO] (BaseMixinConfigPlugin) [MixinConfig] Adding event.CheckAnvilRepairMixin
+[16:23:56] [main/INFO] (BaseMixinConfigPlugin) [MixinConfig] Adding event.ScrollMouseMixin
+[16:23:56] [main/INFO] (BaseMixinConfigPlugin) [MixinConfig] Adding stackable_enchanted_books.FixAnvilBookStackMixin
+[16:23:56] [main/INFO] (BaseMixinConfigPlugin) [MixinConfig] Adding event.SetupGuiMixin
+[16:23:56] [main/INFO] (BaseMixinConfigPlugin) [MixinConfig] Adding show_repair_cost.AddRepairCostToTooltipMixin
+[16:23:56] [main/INFO] (BaseMixinConfigPlugin) [MixinConfig] Adding extra_boats.GetBoatItemMixin
+[16:23:56] [main/INFO] (BaseMixinConfigPlugin) [MixinConfig] Adding no_crop_trampling.PreventTramplingMixin
+[16:23:56] [main/INFO] (BaseMixinConfigPlugin) [MixinConfig] Adding strays_spawn_underground.AllowSpawningAnywhereMixin
+[16:23:56] [main/INFO] (BaseMixinConfigPlugin) [MixinConfig] Adding kilns.AddRecipeCategoryMixin
+[16:23:56] [main/INFO] (BaseMixinConfigPlugin) [MixinConfig] Adding weathering_iron.TickIronBlockMixin
+[16:23:56] [main/INFO] (BaseMixinConfigPlugin) [MixinConfig] Adding helper.FilterAdvancementsMixin
+[16:23:56] [main/INFO] (BaseMixinConfigPlugin) [MixinConfig] Adding event.BlockColorRegisterMixin
+[16:23:56] [main/INFO] (BaseMixinConfigPlugin) [MixinConfig] Adding extra_boats.GetChestBoatItemMixin
+[16:23:56] [main/INFO] (BaseMixinConfigPlugin) [MixinConfig] Adding kilns.GetCorrectCategoriesMixin
+[16:23:56] [main/INFO] (BaseMixinConfigPlugin) [MixinConfig] Adding woodcutters.GetCorrectCategoryMixin
+[16:23:56] [main/WARN] (BaseMixinConfigPlugin) [MixinConfig] Not adding respawn_anchor_in_the_end.CheckIfCanSetSpawnMixin
+[16:23:56] [main/INFO] (BaseMixinConfigPlugin) [MixinConfig] Adding event.GrindstoneMenuOutputMixin
+[16:23:56] [main/INFO] (BaseMixinConfigPlugin) [MixinConfig] Adding event.RenderGuiMixin
+[16:23:56] [main/INFO] (BaseMixinConfigPlugin) [MixinConfig] Adding no_spyglass_scope.RemoveSpyglassHudMixin
+[16:23:56] [main/INFO] (BaseMixinConfigPlugin) [MixinConfig] Adding helper.HoldRecipeManagerMixin
+[16:23:56] [main/INFO] (BaseMixinConfigPlugin) [MixinConfig] Adding stackable_stews.FinishEatingStewMixin
+[16:23:56] [main/INFO] (BaseMixinConfigPlugin) [MixinConfig] Adding event.PlaySoundMixin
+[16:23:56] [main/INFO] (BaseMixinConfigPlugin) [MixinConfig] Adding beekeepers.AddTicketsToBeehiveMixin
+[16:23:56] [main/INFO] (BaseMixinConfigPlugin) [MixinConfig] Adding variant_chests.AddChestBoatTypeMixin
+[16:23:56] [main/INFO] (BaseMixinConfigPlugin) [MixinConfig] Adding chickens_drop_feathers.DropFeatherMixin
+[16:23:56] [main/INFO] (BaseMixinConfigPlugin) [MixinConfig] Adding event.GrindstoneMenuMixin
+[16:23:56] [main/INFO] (BaseMixinConfigPlugin) [MixinConfig] Adding more_portal_frames.LightPortalBlockMixin
+[16:24:01] [main/INFO] (Minecraft) Building optimized datafixer
+[16:24:06] [Render thread/INFO] (Minecraft) Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
+[16:24:07] [Render thread/ERROR] (Minecraft) Failed to verify authentication
 com.mojang.authlib.exceptions.InvalidCredentialsException: Status: 401
 	at com.mojang.authlib.exceptions.MinecraftClientHttpException.toAuthenticationException(MinecraftClientHttpException.java:56) ~[authlib-3.11.49.jar:?]
 	at com.mojang.authlib.yggdrasil.YggdrasilUserApiService.fetchProperties(YggdrasilUserApiService.java:155) ~[authlib-3.11.49.jar:?]
 	at com.mojang.authlib.yggdrasil.YggdrasilUserApiService.<init>(YggdrasilUserApiService.java:55) ~[authlib-3.11.49.jar:?]
 	at com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService.createUserApiService(YggdrasilAuthenticationService.java:161) ~[authlib-3.11.49.jar:?]
-	at net.minecraft.client.Minecraft.createUserApiService(Minecraft.java:645) [minecraft-project-@-merged-named.jar:?]
-	at net.minecraft.client.Minecraft.<init>(Minecraft.java:423) [minecraft-project-@-merged-named.jar:?]
-	at net.minecraft.client.main.Main.run(Main.java:175) [minecraft-project-@-merged-named.jar:?]
-	at net.minecraft.client.main.Main.main(Main.java:50) [minecraft-project-@-merged-named.jar:?]
+	at net.minecraft.client.Minecraft.createUserApiService(Minecraft.java:711) [minecraft-project-@-merged-named.jar:?]
+	at net.minecraft.client.Minecraft.<init>(Minecraft.java:431) [minecraft-project-@-merged-named.jar:?]
+	at net.minecraft.client.main.Main.run(Main.java:205) [minecraft-project-@-merged-named.jar:?]
+	at net.minecraft.client.main.Main.main(Main.java:51) [minecraft-project-@-merged-named.jar:?]
 	at net.fabricmc.loader.impl.game.minecraft.MinecraftGameProvider.launch(MinecraftGameProvider.java:468) [fabric-loader-0.14.20.jar:?]
 	at net.fabricmc.loader.impl.launch.knot.Knot.launch(Knot.java:74) [fabric-loader-0.14.20.jar:?]
 	at net.fabricmc.loader.impl.launch.knot.KnotClient.main(KnotClient.java:23) [fabric-loader-0.14.20.jar:?]
 	at net.fabricmc.devlaunchinjector.Main.main(Main.java:86) [dev-launch-injector-0.2.1+build.8.jar:?]
 Caused by: com.mojang.authlib.exceptions.MinecraftClientHttpException: Status: 401
-	at com.mojang.authlib.minecraft.client.MinecraftClient.readInputStream(MinecraftClient.java:87) ~[authlib-3.11.49.jar:?]
+	at com.mojang.authlib.minecraft.client.MinecraftClient.readInputStream(MinecraftClient.java:85) ~[authlib-3.11.49.jar:?]
 	at com.mojang.authlib.minecraft.client.MinecraftClient.get(MinecraftClient.java:48) ~[authlib-3.11.49.jar:?]
 	at com.mojang.authlib.yggdrasil.YggdrasilUserApiService.fetchProperties(YggdrasilUserApiService.java:129) ~[authlib-3.11.49.jar:?]
 	... 10 more
-[18:09:28] [Render thread/INFO] (Minecraft) Setting user: Player679
-[18:09:29] [Render thread/INFO] (Charm) [ConfigHelper] In module Atlases: setting `Open in off hand` to `false`
-[18:09:29] [Render thread/INFO] (Charm) [ConfigHelper] In module Atlases: setting `Map scale` to `0`
-[18:09:29] [Render thread/INFO] (Charm) [ConfigHelper] In module Atlases: setting `Enable keybind` to `true`
-[18:09:29] [Render thread/INFO] (Charm) [ConfigHelper] In module BatBuckets: setting `Glowing time` to `10`
-[18:09:29] [Render thread/INFO] (Charm) [ConfigHelper] In module BatBuckets: setting `Viewing range` to `24`
-[18:09:29] [Render thread/INFO] (Charm) [ConfigHelper] In module BatBuckets: setting `Damage bat` to `true`
-[18:09:29] [Render thread/INFO] (Charm) [ConfigHelper] In module BlockOfEnderPearls: setting `Chorus teleport range` to `16`
-[18:09:29] [Render thread/INFO] (Charm) [ConfigHelper] In module BlockOfEnderPearls: setting `Chorus fruit teleport` to `true`
-[18:09:29] [Render thread/INFO] (Charm) [ConfigHelper] In module BlockOfEnderPearls: setting `Convert silverfish to endermite` to `true`
-[18:09:29] [Render thread/INFO] (Charm) [ConfigHelper] In module Bookcases: setting `Valid items` to `[minecraft:book, minecraft:enchanted_book, minecraft:written_book, minecraft:writable_book, minecraft:knowledge_book, minecraft:paper, minecraft:map, minecraft:filled_map]`
-[18:09:29] [Render thread/INFO] (Charm) [ConfigHelper] In module CaveSpidersDropCobwebs: setting `Maximum drops` to `2`
-[18:09:29] [Render thread/INFO] (Charm) [ConfigHelper] In module CompassOverlay: setting `Facing` to `true`
-[18:09:29] [Render thread/INFO] (Charm) [ConfigHelper] In module CompassOverlay: setting `Co-ordinates` to `true`
-[18:09:29] [Render thread/INFO] (Charm) [ConfigHelper] In module CompassOverlay: setting `Biome` to `true`
-[18:09:29] [Render thread/INFO] (Charm) [ConfigHelper] In module CompassOverlay: setting `Only show X and Z` to `false`
-[18:09:29] [Render thread/INFO] (Charm) [ConfigHelper] In module CompassOverlay: setting `Show when sneaking` to `false`
-[18:09:29] [Render thread/INFO] (Charm) [ConfigHelper] In module CoralSquids: setting `Drop chance` to `0.2`
-[18:09:29] [Render thread/INFO] (Charm) [ConfigHelper] In module CoralSquids: setting `Spawn weight` to `50`
-[18:09:29] [Render thread/INFO] (Charm) [ConfigHelper] In module Core: setting `Debug mode` to `true`
-[18:09:29] [Render thread/INFO] (Charm) [ConfigHelper] In module Core: setting `Advancements` to `true`
-[18:09:29] [Render thread/INFO] (Charm) [ConfigHelper] In module Core: setting `Allow zero cost anvil recipes` to `true`
-[18:09:29] [Render thread/INFO] (Charm) [ConfigHelper] In module EndermitePowder: setting `Maximum drops` to `2`
-[18:09:29] [Render thread/INFO] (Charm) [ConfigHelper] In module ExtraRecipes: setting `Ore block from raw ore block` to `true`
-[18:09:29] [Render thread/INFO] (Charm) [ConfigHelper] In module ExtraRecipes: setting `Gilded Blackstone` to `true`
-[18:09:29] [Render thread/INFO] (Charm) [ConfigHelper] In module ExtraRecipes: setting `Trident` to `true`
-[18:09:29] [Render thread/INFO] (Charm) [ConfigHelper] In module ExtraRecipes: setting `Cyan Dye from warped roots` to `true`
-[18:09:29] [Render thread/INFO] (Charm) [ConfigHelper] In module ExtraRecipes: setting `Green Dye from yellow and blue` to `true`
-[18:09:29] [Render thread/INFO] (Charm) [ConfigHelper] In module ExtraRecipes: setting `Snowballs from snow blocks` to `true`
-[18:09:29] [Render thread/INFO] (Charm) [ConfigHelper] In module ExtraRecipes: setting `Quartz from quartz blocks` to `true`
-[18:09:29] [Render thread/INFO] (Charm) [ConfigHelper] In module ExtraRecipes: setting `Clay balls from clay blocks` to `true`
-[18:09:29] [Render thread/INFO] (Charm) [ConfigHelper] In module ExtraRecipes: setting `Simpler Soul Torch` to `true`
-[18:09:29] [Render thread/INFO] (Charm) [ConfigHelper] In module ExtraRecipes: setting `Shapeless bread` to `true`
-[18:09:29] [Render thread/INFO] (Charm) [ConfigHelper] In module ExtraRecipes: setting `Shapeless paper` to `true`
-[18:09:29] [Render thread/INFO] (Charm) [ConfigHelper] In module ExtraRecipes: setting `Bundle from leather` to `true`
-[18:09:29] [Render thread/INFO] (Charm) [ConfigHelper] In module ExtraTrades: setting `Enchanted books` to `true`
-[18:09:29] [Render thread/INFO] (Charm) [ConfigHelper] In module ExtraTrades: setting `Repaired anvils` to `true`
-[18:09:29] [Render thread/INFO] (Charm) [ConfigHelper] In module ExtraTrades: setting `Leather for rotten flesh` to `true`
-[18:09:29] [Render thread/INFO] (Charm) [ConfigHelper] In module ExtraTrades: setting `Beef for rotten flesh` to `true`
-[18:09:29] [Render thread/INFO] (Charm) [ConfigHelper] In module ExtraTrades: setting `Bundles` to `true`
-[18:09:29] [Render thread/INFO] (Charm) [ConfigHelper] In module ExtractEnchantments: setting `Initial cost` to `5`
-[18:09:29] [Render thread/INFO] (Charm) [ConfigHelper] In module ExtractEnchantments: setting `Treasure cost` to `5`
-[18:09:29] [Render thread/INFO] (Charm) [ConfigHelper] In module ExtractEnchantments: setting `Add item repair cost` to `true`
-[18:09:29] [Render thread/INFO] (Charm) [ConfigHelper] In module GentlePotionParticles: setting `Translucent particles` to `true`
-[18:09:29] [Render thread/INFO] (Charm) [ConfigHelper] In module GoatsDropMutton: setting `Maximum drops` to `2`
-[18:09:29] [Render thread/INFO] (Charm) [ConfigHelper] In module HusksDropSand: setting `Maximum drops` to `2`
-[18:09:29] [Render thread/INFO] (Charm) [ConfigHelper] In module ImprovedMineshafts: setting `Corridor floor blocks` to `0.03`
-[18:09:29] [Render thread/INFO] (Charm) [ConfigHelper] In module ImprovedMineshafts: setting `Corridor ceiling blocks` to `0.02`
-[18:09:29] [Render thread/INFO] (Charm) [ConfigHelper] In module ImprovedMineshafts: setting `Corridor block piles` to `0.2`
-[18:09:29] [Render thread/INFO] (Charm) [ConfigHelper] In module ImprovedMineshafts: setting `Room blocks` to `0.25`
-[18:09:29] [Render thread/INFO] (Charm) [ConfigHelper] In module ImprovedMineshafts: setting `Extra minecarts` to `0.2`
-[18:09:29] [Render thread/INFO] (Charm) [ConfigHelper] In module ImprovedMineshafts: setting `Minecart loot tables` to `[chests/simple_dungeon, chests/abandoned_mineshaft, chests/village/village_temple, chests/village/village_cartographer, chests/village/village_mason, chests/village/village_toolsmith, chests/village/village_weaponsmith]`
-[18:09:29] [Render thread/INFO] (Charm) [ConfigHelper] In module NoCropTrampling: setting `Require feather falling` to `false`
-[18:09:29] [Render thread/INFO] (Charm) [ConfigHelper] In module PortableCrafting: setting `Enable keybind` to `true`
-[18:09:29] [Render thread/INFO] (Charm) [ConfigHelper] In module QuickReplant: setting `Replantable blockstates` to `[minecraft:beetroots[age=3], minecraft:carrots[age=7], minecraft:nether_wart[age=3], minecraft:potatoes[age=7], minecraft:wheat[age=7]]`
-[18:09:29] [Render thread/INFO] (Charm) [ConfigHelper] In module RaidHorns: setting `Drop chance` to `0.05`
-[18:09:29] [Render thread/INFO] (Charm) [ConfigHelper] In module RaidHorns: setting `Volume` to `0.75`
-[18:09:29] [Render thread/INFO] (Charm) [ConfigHelper] In module RepairElytraFromLeather: setting `Allow when insomnia enabled` to `false`
-[18:09:29] [Render thread/INFO] (Charm) [ConfigHelper] In module RepairNetheriteFromScrap: setting `XP cost` to `1`
-[18:09:29] [Render thread/INFO] (Charm) [ConfigHelper] In module RepairNetheriteFromScrap: setting `Repairable items` to `[netherite_hoe, netherite_shovel, netherite_axe, netherite_pickaxe, netherite_sword, netherite_helmet, netherite_chestplate, netherite_leggings, netherite_boots]`
-[18:09:29] [Render thread/INFO] (Charm) [ConfigHelper] In module SnowAccumulation: setting `Allow block replace` to `true`
-[18:09:29] [Render thread/INFO] (Charm) [ConfigHelper] In module SnowAccumulation: setting `Powder snow chance` to `0.01`
-[18:09:29] [Render thread/INFO] (Charm) [ConfigHelper] In module StackableEnchantedBooks: setting `Stack size` to `16`
-[18:09:29] [Render thread/INFO] (Charm) [ConfigHelper] In module StackablePotions: setting `Stack size` to `16`
-[18:09:29] [Render thread/INFO] (Charm) [ConfigHelper] In module StackableStews: setting `Stack size` to `16`
-[18:09:29] [Render thread/INFO] (Charm) [ConfigHelper] In module StackableStews: setting `Enable suspicious stew` to `false`
-[18:09:29] [Render thread/INFO] (Charm) [ConfigHelper] In module StraysDropBlueIce: setting `Maximum drops` to `2`
-[18:09:29] [Render thread/INFO] (Charm) [ConfigHelper] In module TotemOfPreserving: setting `Grave mode` to `true`
-[18:09:29] [Render thread/INFO] (Charm) [ConfigHelper] In module TotemOfPreserving: setting `Owner only` to `false`
-[18:09:29] [Render thread/INFO] (Charm) [ConfigHelper] In module TotemOfPreserving: setting `Mobs drop totems` to `[entities/witch, entities/pillager]`
-[18:09:29] [Render thread/INFO] (Charm) [ConfigHelper] In module TotemOfPreserving: setting `Chests contain totems` to `[chests/pillager_outpost, chests/woodland_mansion]`
-[18:09:29] [Render thread/INFO] (Charm) [ConfigHelper] In module TotemOfPreserving: setting `Preserve XP` to `false`
-[18:09:29] [Render thread/INFO] (Charm) [ConfigHelper] In module TotemOfPreserving: setting `Show death position` to `false`
-[18:09:29] [Render thread/INFO] (Charm) [ConfigHelper] In module VariantMobTextures: setting `Variant cows` to `true`
-[18:09:29] [Render thread/INFO] (Charm) [ConfigHelper] In module VariantMobTextures: setting `Variant chickens` to `true`
-[18:09:29] [Render thread/INFO] (Charm) [ConfigHelper] In module VariantMobTextures: setting `Variant dolphins` to `true`
-[18:09:29] [Render thread/INFO] (Charm) [ConfigHelper] In module VariantMobTextures: setting `Variant pigs` to `true`
-[18:09:29] [Render thread/INFO] (Charm) [ConfigHelper] In module VariantMobTextures: setting `Variant sheep` to `true`
-[18:09:29] [Render thread/INFO] (Charm) [ConfigHelper] In module VariantMobTextures: setting `Variant snow golems` to `true`
-[18:09:29] [Render thread/INFO] (Charm) [ConfigHelper] In module VariantMobTextures: setting `Variant squids` to `true`
-[18:09:29] [Render thread/INFO] (Charm) [ConfigHelper] In module VariantMobTextures: setting `Variant turtles` to `true`
-[18:09:29] [Render thread/INFO] (Charm) [ConfigHelper] In module VariantMobTextures: setting `Variant wolves` to `true`
-[18:09:29] [Render thread/INFO] (Charm) [ConfigHelper] In module VariantMobTextures: setting `Variant wandering traders` to `true`
-[18:09:29] [Render thread/INFO] (Charm) [ConfigHelper] In module VariantMobTextures: setting `Rare variants` to `true`
-[18:09:29] [Render thread/INFO] (Charm) [ConfigHelper] In module VariantMobTextures: setting `Rarity of rare variants` to `1000`
-[18:09:29] [Render thread/INFO] (Charm) [ConfigHelper] In module WeatheringIron: setting `Faces increase weathering` to `true`
-[18:09:29] [Render thread/INFO] (Charm) [ConfigHelper] In module WeatheringIron: setting `Face multiplier` to `0.008`
-[18:09:29] [Render thread/INFO] (Charm) [ConfigHelper] In module WeatheringIron: setting `Weathering chance` to `0.006`
-[18:09:29] [Render thread/INFO] (Charm) [ConfigHelper] In module WeatheringIron: setting `Bubble column chance multiplier` to `4.0`
-[18:09:29] [Render thread/INFO] (Charm) [ConfigHelper] In module WitchesDropLuck: setting `Drop chance` to `0.05`
-[18:09:29] [Render thread/INFO] (Charm) [ConfigHelper] Written config to disk
-[18:09:29] [Render thread/INFO] (Charm) [ModuleLoader] Registering Core
-[18:09:29] [Render thread/INFO] (Charm) [ModuleLoader] Registering VariantBarrels
-[18:09:29] [Render thread/INFO] (Charm) [ModuleLoader] Registering VariantChests
-[18:09:29] [Render thread/INFO] (Charm) [ModuleLoader] Registering ExtraBoats
-[18:09:29] [Render thread/INFO] (Charm) [ModuleLoader] Registering Woodcutters
-[18:09:29] [Render thread/INFO] (Charm) [ModuleLoader] Registering AerialAffinityEnchantment
-[18:09:29] [Render thread/INFO] (Charm) [ModuleLoader] Registering AllowTooExpensive
-[18:09:29] [Render thread/INFO] (Charm) [ModuleLoader] Registering AmethystNoteBlock
-[18:09:29] [Render thread/INFO] (Charm) [ModuleLoader] Registering Atlases
-[18:09:29] [Render thread/INFO] (Charm) [ModuleLoader] Registering AutoRestock
-[18:09:29] [Render thread/INFO] (Charm) [ModuleLoader] Registering AutomaticRecipeUnlock
-[18:09:29] [Render thread/INFO] (Charm) [ModuleLoader] Registering AzaleaWood
-[18:09:29] [Render thread/INFO] (Charm) [ModuleLoader] Registering BatBuckets
-[18:09:29] [Render thread/INFO] (Charm) [ModuleLoader] Registering BeaconsHealMobs
-[18:09:29] [Render thread/INFO] (Charm) [ModuleLoader] Registering Beekeepers
-[18:09:29] [Render thread/INFO] (Charm) [ModuleLoader] Registering BlockOfEnderPearls
-[18:09:29] [Render thread/INFO] (Charm) [ModuleLoader] Registering BlockOfGunpowder
-[18:09:29] [Render thread/INFO] (Charm) [ModuleLoader] Registering BlockOfSugar
-[18:09:29] [Render thread/INFO] (Charm) [ModuleLoader] Registering Bookcases
-[18:09:29] [Render thread/INFO] (Charm) [ModuleLoader] Registering BumblezoneIntegration
-[18:09:29] [Render thread/INFO] (Charm) [ModuleLoader] Registering CaveSpidersDropCobwebs
-[18:09:29] [Render thread/INFO] (Charm) [ModuleLoader] Registering Chairs
-[18:09:29] [Render thread/INFO] (Charm) [ModuleLoader] Registering ChickensDropFeathers
-[18:09:29] [Render thread/INFO] (Charm) [ModuleLoader] Registering ClearItemFrames
-[18:09:29] [Render thread/INFO] (Charm) [ModuleLoader] Registering CollectionEnchantment
-[18:09:29] [Render thread/INFO] (Charm) [ModuleLoader] Registering ColoredBundles
-[18:09:29] [Render thread/INFO] (Charm) [ModuleLoader] Registering ColoredNetherPortals
-[18:09:29] [Render thread/INFO] (Charm) [ModuleLoader] Registering CompassOverlay
-[18:09:29] [Render thread/INFO] (Charm) [ModuleLoader] Registering CoralSeaLanterns
-[18:09:29] [Render thread/INFO] (Charm) [ModuleLoader] Registering CoralSquids
-[18:09:29] [Render thread/INFO] (Charm) [ModuleLoader] Registering DiscsStopBackgroundMusic
-[18:09:29] [Render thread/INFO] (Charm) [ModuleLoader] Registering EbonyWood
-[18:09:29] [Render thread/INFO] (Charm) [ModuleLoader] Registering EditableSigns
-[18:09:29] [Render thread/INFO] (Charm) [ModuleLoader] Registering EndermitePowder
-[18:09:29] [Render thread/INFO] (Charm) [ModuleLoader] Registering ExtraRecipes
-[18:09:29] [Render thread/INFO] (Charm) [ModuleLoader] Registering ExtraTrades
-[18:09:29] [Render thread/INFO] (Charm) [ModuleLoader] Registering ExtraWanderingTrades
-[18:09:29] [Render thread/INFO] (Charm) [ModuleLoader] Registering ExtractEnchantments
-[18:09:29] [Render thread/INFO] (Charm) [ModuleLoader] Registering GentlePotionParticles
-[18:09:29] [Render thread/INFO] (Charm) [ModuleLoader] Registering GoatsDropMutton
-[18:09:29] [Render thread/INFO] (Charm) [ModuleLoader] Registering GrindableArmor
-[18:09:29] [Render thread/INFO] (Charm) [ModuleLoader] Registering HoverSorting
-[18:09:29] [Render thread/INFO] (Charm) [ModuleLoader] Registering HusksDropSand
-[18:09:29] [Render thread/INFO] (Charm) [ModuleLoader] Registering HusksSpawnUnderground
-[18:09:29] [Render thread/INFO] (Charm) [ModuleLoader] Registering ImprovedFortressLoot
-[18:09:29] [Render thread/INFO] (Charm) [ModuleLoader] Registering ImprovedMansionLoot
-[18:09:29] [Render thread/INFO] (Charm) [ModuleLoader] Registering ImprovedMineshafts
-[18:09:29] [Render thread/INFO] (Charm) [ModuleLoader] Registering InventoryTidying
-[18:09:29] [Render thread/INFO] (Charm) [ModuleLoader] Registering Kilns
-[18:09:29] [Render thread/INFO] (Charm) [ModuleLoader] Registering LavaBucketDestroysItems
-[18:09:29] [Render thread/INFO] (Charm) [ModuleLoader] Registering LowerNoteblockPitch
-[18:09:29] [Render thread/INFO] (Charm) [ModuleLoader] Registering Lumberjacks
-[18:09:29] [Render thread/INFO] (Charm) [ModuleLoader] Registering MapTooltip
-[18:09:29] [Render thread/INFO] (Charm) [ModuleLoader] Registering Mooblooms
-[18:09:29] [Render thread/INFO] (Charm) [ModuleLoader] Registering MorePortalFrames
-[18:09:29] [Render thread/INFO] (Charm) [ModuleLoader] Registering NoChatVerifiedNag
-[18:09:29] [Render thread/INFO] (Charm) [ModuleLoader] Registering NoCropTrampling
-[18:09:29] [Render thread/INFO] (Charm) [ModuleLoader] Registering NoCuredVillagerDiscount
-[18:09:29] [Render thread/INFO] (Charm) [ModuleLoader] Registering NoNitwits
-[18:09:29] [Render thread/INFO] (Charm) [ModuleLoader] Registering NoPetDamage
-[18:09:29] [Render thread/INFO] (Charm) [ModuleLoader] Registering NoPotionGlint
-[18:09:29] [Render thread/INFO] (Charm) [ModuleLoader] Registering NoSpyglassScope
-[18:09:29] [Render thread/INFO] (Charm) [ModuleLoader] Registering NoTreasureEnchantmentTrading
-[18:09:29] [Render thread/INFO] (Charm) [ModuleLoader] Registering OpenBothDoors
-[18:09:29] [Render thread/INFO] (Charm) [ModuleLoader] Registering ParrotsStayOnShoulder
-[18:09:29] [Render thread/INFO] (Charm) [ModuleLoader] Registering PathToDirt
-[18:09:29] [Render thread/INFO] (Charm) [ModuleLoader] Registering PlayerPressurePlates
-[18:09:29] [Render thread/INFO] (Charm) [ModuleLoader] Registering PortableCrafting
-[18:09:29] [Render thread/INFO] (Charm) [ModuleLoader] Registering QuickReplant
-[18:09:29] [Render thread/INFO] (Charm) [ModuleLoader] Registering RaidHorns
-[18:09:29] [Render thread/INFO] (Charm) [ModuleLoader] Registering RedstoneLanterns
-[18:09:29] [Render thread/INFO] (Charm) [ModuleLoader] Registering RedstoneSand
-[18:09:29] [Render thread/INFO] (Charm) [ModuleLoader] Registering RepairElytraFromLeather
-[18:09:29] [Render thread/INFO] (Charm) [ModuleLoader] Registering RepairNetheriteFromScrap
-[18:09:29] [Render thread/INFO] (Charm) [ModuleLoader] Registering RepairTridentsFromShards
-[18:09:29] [Render thread/INFO] (Charm) [ModuleLoader] Registering RespawnAnchorInTheEnd
-[18:09:29] [Render thread/INFO] (Charm) [ModuleLoader] Registering ShowRepairCost
-[18:09:29] [Render thread/INFO] (Charm) [ModuleLoader] Registering ShulkerBoxDragDrop
-[18:09:29] [Render thread/INFO] (Charm) [ModuleLoader] Registering ShulkerBoxTooltip
-[18:09:29] [Render thread/INFO] (Charm) [ModuleLoader] Registering SmoothGlowstone
-[18:09:29] [Render thread/INFO] (Charm) [ModuleLoader] Registering SnowAccumulation
-[18:09:29] [Render thread/INFO] (Charm) [ModuleLoader] Registering StackableEnchantedBooks
-[18:09:29] [Render thread/INFO] (Charm) [ModuleLoader] Registering StackablePotions
-[18:09:29] [Render thread/INFO] (Charm) [ModuleLoader] Registering StackableStews
-[18:09:29] [Render thread/INFO] (Charm) [ModuleLoader] Registering StraysDropBlueIce
-[18:09:29] [Render thread/INFO] (Charm) [ModuleLoader] Registering StraysSpawnUnderground
-[18:09:29] [Render thread/INFO] (Charm) [ModuleLoader] Registering StrongerAnvils
-[18:09:29] [Render thread/INFO] (Charm) [ModuleLoader] Registering TotemOfPreserving
-[18:09:29] [Render thread/INFO] (Charm) [ModuleLoader] Registering TotemWorksFromInventory
-[18:09:29] [Render thread/INFO] (Charm) [ModuleLoader] Registering VariantBars
-[18:09:29] [Render thread/INFO] (Charm) [ModuleLoader] Registering VariantBookshelves
-[18:09:29] [Render thread/INFO] (Charm) [ModuleLoader] Registering VariantChains
-[18:09:29] [Render thread/INFO] (Charm) [ModuleLoader] Registering VariantLadders
-[18:09:29] [Render thread/INFO] (Charm) [ModuleLoader] Registering VariantLanterns
-[18:09:29] [Render thread/INFO] (Charm) [ModuleLoader] Registering VariantMobTextures
-[18:09:29] [Render thread/INFO] (Charm) [ModuleLoader] Registering VillagersFollowEmeraldBlocks
-[18:09:29] [Render thread/INFO] (Charm) [ModuleLoader] Registering WeatheringIron
-[18:09:29] [Render thread/INFO] (Charm) [ModuleLoader] Registering WitchesDropLuck
-[18:09:29] [Render thread/INFO] (Charm) [ModuleLoader] Enabled AerialAffinityEnchantment
-[18:09:29] [Render thread/INFO] (Charm) [ModuleLoader] Enabled AllowTooExpensive
-[18:09:29] [Render thread/INFO] (Charm) [ModuleLoader] Enabled AmethystNoteBlock
-[18:09:29] [Render thread/INFO] (Charm) [ModuleLoader] Enabled Atlases
-[18:09:29] [Render thread/INFO] (Charm) [ModuleLoader] Enabled AutoRestock
-[18:09:29] [Render thread/WARN] (Charm) [ModuleLoader] Disabled in configuration: AutomaticRecipeUnlock
-[18:09:29] [Render thread/INFO] (Charm) [ModuleLoader] Enabled AzaleaWood
-[18:09:29] [Render thread/INFO] (Charm) [ModuleLoader] Enabled BatBuckets
-[18:09:29] [Render thread/INFO] (Charm) [ModuleLoader] Enabled BeaconsHealMobs
-[18:09:29] [Render thread/INFO] (Charm) [ModuleLoader] Enabled Beekeepers
-[18:09:29] [Render thread/INFO] (Charm) [ModuleLoader] Enabled BlockOfEnderPearls
-[18:09:29] [Render thread/INFO] (Charm) [ModuleLoader] Enabled BlockOfGunpowder
-[18:09:29] [Render thread/INFO] (Charm) [ModuleLoader] Enabled BlockOfSugar
-[18:09:29] [Render thread/INFO] (Charm) [ModuleLoader] Enabled Bookcases
-[18:09:29] [Render thread/WARN] (Charm) [ModuleLoader] Failed dependency check: BumblezoneIntegration
-[18:09:29] [Render thread/INFO] (Charm) [ModuleLoader] Enabled CaveSpidersDropCobwebs
-[18:09:29] [Render thread/INFO] (Charm) [ModuleLoader] Enabled Chairs
-[18:09:29] [Render thread/INFO] (Charm) [ModuleLoader] Enabled ChickensDropFeathers
-[18:09:29] [Render thread/INFO] (Charm) [ModuleLoader] Enabled ClearItemFrames
-[18:09:29] [Render thread/INFO] (Charm) [ModuleLoader] Enabled CollectionEnchantment
-[18:09:29] [Render thread/INFO] (Charm) [ModuleLoader] Enabled ColoredBundles
-[18:09:29] [Render thread/INFO] (Charm) [ModuleLoader] Enabled ColoredNetherPortals
-[18:09:29] [Render thread/INFO] (Charm) [ModuleLoader] Enabled CompassOverlay
-[18:09:29] [Render thread/INFO] (Charm) [ModuleLoader] Enabled CoralSeaLanterns
-[18:09:29] [Render thread/INFO] (Charm) [ModuleLoader] Enabled CoralSquids
-[18:09:29] [Render thread/INFO] (Charm) [ModuleLoader] Enabled Core
-[18:09:29] [Render thread/INFO] (Charm) [ModuleLoader] Enabled DiscsStopBackgroundMusic
-[18:09:29] [Render thread/INFO] (Charm) [ModuleLoader] Enabled EbonyWood
-[18:09:29] [Render thread/INFO] (Charm) [ModuleLoader] Enabled EditableSigns
-[18:09:29] [Render thread/INFO] (Charm) [ModuleLoader] Enabled EndermitePowder
-[18:09:29] [Render thread/INFO] (Charm) [ModuleLoader] Enabled ExtraBoats
-[18:09:29] [Render thread/INFO] (Charm) [ModuleLoader] Enabled ExtraRecipes
-[18:09:29] [Render thread/INFO] (Charm) [ModuleLoader] Enabled ExtraTrades
-[18:09:29] [Render thread/INFO] (Charm) [ModuleLoader] Enabled ExtraWanderingTrades
-[18:09:29] [Render thread/INFO] (Charm) [ModuleLoader] Enabled ExtractEnchantments
-[18:09:29] [Render thread/INFO] (Charm) [ModuleLoader] Enabled GentlePotionParticles
-[18:09:29] [Render thread/INFO] (Charm) [ModuleLoader] Enabled GoatsDropMutton
-[18:09:29] [Render thread/INFO] (Charm) [ModuleLoader] Enabled GrindableArmor
-[18:09:29] [Render thread/INFO] (Charm) [ModuleLoader] Enabled HoverSorting
-[18:09:29] [Render thread/INFO] (Charm) [ModuleLoader] Enabled HusksDropSand
-[18:09:29] [Render thread/INFO] (Charm) [ModuleLoader] Enabled HusksSpawnUnderground
-[18:09:29] [Render thread/INFO] (Charm) [ModuleLoader] Enabled ImprovedFortressLoot
-[18:09:29] [Render thread/INFO] (Charm) [ModuleLoader] Enabled ImprovedMansionLoot
-[18:09:29] [Render thread/INFO] (Charm) [ModuleLoader] Enabled ImprovedMineshafts
-[18:09:29] [Render thread/INFO] (Charm) [ModuleLoader] Enabled InventoryTidying
-[18:09:29] [Render thread/INFO] (Charm) [ModuleLoader] Enabled Kilns
-[18:09:29] [Render thread/INFO] (Charm) [ModuleLoader] Enabled LavaBucketDestroysItems
-[18:09:29] [Render thread/INFO] (Charm) [ModuleLoader] Enabled LowerNoteblockPitch
-[18:09:29] [Render thread/INFO] (Charm) [ModuleLoader] Enabled Lumberjacks
-[18:09:29] [Render thread/INFO] (Charm) [ModuleLoader] Enabled MapTooltip
-[18:09:29] [Render thread/INFO] (Charm) [ModuleLoader] Enabled Mooblooms
-[18:09:29] [Render thread/INFO] (Charm) [ModuleLoader] Enabled MorePortalFrames
-[18:09:29] [Render thread/WARN] (Charm) [ModuleLoader] Disabled in configuration: NoChatVerifiedNag
-[18:09:29] [Render thread/INFO] (Charm) [ModuleLoader] Enabled NoCropTrampling
-[18:09:29] [Render thread/WARN] (Charm) [ModuleLoader] Disabled in configuration: NoCuredVillagerDiscount
-[18:09:29] [Render thread/WARN] (Charm) [ModuleLoader] Disabled in configuration: NoNitwits
-[18:09:29] [Render thread/INFO] (Charm) [ModuleLoader] Enabled NoPetDamage
-[18:09:29] [Render thread/INFO] (Charm) [ModuleLoader] Enabled NoPotionGlint
-[18:09:29] [Render thread/INFO] (Charm) [ModuleLoader] Enabled NoSpyglassScope
-[18:09:29] [Render thread/WARN] (Charm) [ModuleLoader] Disabled in configuration: NoTreasureEnchantmentTrading
-[18:09:29] [Render thread/INFO] (Charm) [ModuleLoader] Enabled OpenBothDoors
-[18:09:29] [Render thread/INFO] (Charm) [ModuleLoader] Enabled ParrotsStayOnShoulder
-[18:09:29] [Render thread/INFO] (Charm) [ModuleLoader] Enabled PathToDirt
-[18:09:29] [Render thread/INFO] (Charm) [ModuleLoader] Enabled PlayerPressurePlates
-[18:09:29] [Render thread/INFO] (Charm) [ModuleLoader] Enabled PortableCrafting
-[18:09:29] [Render thread/INFO] (Charm) [ModuleLoader] Enabled QuickReplant
-[18:09:29] [Render thread/INFO] (Charm) [ModuleLoader] Enabled RaidHorns
-[18:09:29] [Render thread/INFO] (Charm) [ModuleLoader] Enabled RedstoneLanterns
-[18:09:29] [Render thread/INFO] (Charm) [ModuleLoader] Enabled RedstoneSand
-[18:09:29] [Render thread/INFO] (Charm) [ModuleLoader] Enabled RepairElytraFromLeather
-[18:09:29] [Render thread/INFO] (Charm) [ModuleLoader] Enabled RepairNetheriteFromScrap
-[18:09:29] [Render thread/INFO] (Charm) [ModuleLoader] Enabled RepairTridentsFromShards
-[18:09:29] [Render thread/WARN] (Charm) [ModuleLoader] Disabled in configuration: RespawnAnchorInTheEnd
-[18:09:29] [Render thread/INFO] (Charm) [ModuleLoader] Enabled ShowRepairCost
-[18:09:29] [Render thread/INFO] (Charm) [ModuleLoader] Enabled ShulkerBoxDragDrop
-[18:09:29] [Render thread/INFO] (Charm) [ModuleLoader] Enabled ShulkerBoxTooltip
-[18:09:29] [Render thread/INFO] (Charm) [ModuleLoader] Enabled SmoothGlowstone
-[18:09:29] [Render thread/INFO] (Charm) [ModuleLoader] Enabled SnowAccumulation
-[18:09:29] [Render thread/INFO] (Charm) [ModuleLoader] Enabled StackableEnchantedBooks
-[18:09:29] [Render thread/INFO] (Charm) [ModuleLoader] Enabled StackablePotions
-[18:09:29] [Render thread/INFO] (Charm) [ModuleLoader] Enabled StackableStews
-[18:09:29] [Render thread/INFO] (Charm) [ModuleLoader] Enabled StraysDropBlueIce
-[18:09:29] [Render thread/INFO] (Charm) [ModuleLoader] Enabled StraysSpawnUnderground
-[18:09:29] [Render thread/INFO] (Charm) [ModuleLoader] Enabled StrongerAnvils
-[18:09:29] [Render thread/INFO] (Charm) [ModuleLoader] Enabled TotemOfPreserving
-[18:09:29] [Render thread/INFO] (Charm) [ModuleLoader] Enabled TotemWorksFromInventory
-[18:09:29] [Render thread/INFO] (Charm) [ModuleLoader] Enabled VariantBarrels
-[18:09:29] [Render thread/INFO] (Charm) [ModuleLoader] Enabled VariantBars
-[18:09:29] [Render thread/INFO] (Charm) [ModuleLoader] Enabled VariantBookshelves
-[18:09:29] [Render thread/INFO] (Charm) [ModuleLoader] Enabled VariantChains
-[18:09:29] [Render thread/INFO] (Charm) [ModuleLoader] Enabled VariantChests
-[18:09:29] [Render thread/INFO] (Charm) [ModuleLoader] Enabled VariantLadders
-[18:09:29] [Render thread/INFO] (Charm) [ModuleLoader] Enabled VariantLanterns
-[18:09:29] [Render thread/INFO] (Charm) [ModuleLoader] Enabled VariantMobTextures
-[18:09:29] [Render thread/INFO] (Charm) [ModuleLoader] Enabled VillagersFollowEmeraldBlocks
-[18:09:29] [Render thread/INFO] (Charm) [ModuleLoader] Enabled WeatheringIron
-[18:09:29] [Render thread/INFO] (Charm) [ModuleLoader] Enabled WitchesDropLuck
-[18:09:29] [Render thread/INFO] (Charm) [ModuleLoader] Enabled Woodcutters
-[18:09:29] [Render thread/INFO] (Charm) [ModuleLoader] Running AerialAffinityEnchantment
-[18:09:29] [Render thread/INFO] (Charm) [ModuleLoader] Running AllowTooExpensive
-[18:09:29] [Render thread/INFO] (Charm) [ModuleLoader] Running AmethystNoteBlock
-[18:09:29] [Render thread/INFO] (Charm) [ModuleLoader] Running Atlases
-[18:09:29] [Render thread/INFO] (Charm) [ModuleLoader] Running AutoRestock
-[18:09:29] [Render thread/INFO] (Charm) [ModuleLoader] Running AzaleaWood
-[18:09:29] [Render thread/INFO] (Charm) [ModuleLoader] Running BatBuckets
-[18:09:29] [Render thread/INFO] (Charm) [ModuleLoader] Running BeaconsHealMobs
-[18:09:29] [Render thread/INFO] (Charm) [ModuleLoader] Running Beekeepers
-[18:09:29] [Render thread/INFO] (Charm) [ModuleLoader] Running BlockOfEnderPearls
-[18:09:29] [Render thread/INFO] (Charm) [ModuleLoader] Running BlockOfGunpowder
-[18:09:29] [Render thread/INFO] (Charm) [ModuleLoader] Running BlockOfSugar
-[18:09:29] [Render thread/INFO] (Charm) [ModuleLoader] Running Bookcases
-[18:09:29] [Render thread/INFO] (Charm) [ModuleLoader] Running CaveSpidersDropCobwebs
-[18:09:29] [Render thread/INFO] (Charm) [ModuleLoader] Running Chairs
-[18:09:29] [Render thread/INFO] (Charm) [ModuleLoader] Running ChickensDropFeathers
-[18:09:29] [Render thread/INFO] (Charm) [ModuleLoader] Running ClearItemFrames
-[18:09:29] [Render thread/INFO] (Charm) [ModuleLoader] Running CollectionEnchantment
-[18:09:29] [Render thread/INFO] (Charm) [ModuleLoader] Running ColoredBundles
-[18:09:29] [Render thread/INFO] (Charm) [ModuleLoader] Running ColoredNetherPortals
-[18:09:29] [Render thread/INFO] (Charm) [ModuleLoader] Running CompassOverlay
-[18:09:29] [Render thread/INFO] (Charm) [ModuleLoader] Running CoralSeaLanterns
-[18:09:29] [Render thread/INFO] (Charm) [ModuleLoader] Running CoralSquids
-[18:09:29] [Render thread/INFO] (Charm) [ModuleLoader] Running Core
-[18:09:29] [Render thread/INFO] (Charm) [ModuleLoader] Running DiscsStopBackgroundMusic
-[18:09:29] [Render thread/INFO] (Charm) [ModuleLoader] Running EbonyWood
-[18:09:29] [Render thread/INFO] (Charm) [ModuleLoader] Running EditableSigns
-[18:09:29] [Render thread/INFO] (Charm) [ModuleLoader] Running EndermitePowder
-[18:09:29] [Render thread/INFO] (Charm) [ModuleLoader] Running ExtraBoats
-[18:09:29] [Render thread/INFO] (Charm) [ModuleLoader] Running ExtraRecipes
-[18:09:29] [Render thread/INFO] (Charm) [ModuleLoader] Running ExtraTrades
-[18:09:29] [Render thread/INFO] (Charm) [ModuleLoader] Running ExtraWanderingTrades
-[18:09:29] [Render thread/INFO] (Charm) [ExtraWanderingTrades] normal: azalea_log, count: 8, cost: 5
-[18:09:29] [Render thread/INFO] (Charm) [ExtraWanderingTrades] normal: brown_bundle, count: 1, cost: 6
-[18:09:29] [Render thread/INFO] (Charm) [ExtraWanderingTrades] normal: atlas, count: 1, cost: 5
-[18:09:29] [Render thread/INFO] (Charm) [ExtraWanderingTrades] normal: orange_bundle, count: 1, cost: 6
-[18:09:29] [Render thread/INFO] (Charm) [ExtraWanderingTrades] normal: lime_bundle, count: 1, cost: 6
-[18:09:29] [Render thread/INFO] (Charm) [ExtraWanderingTrades] normal: yellow_bundle, count: 1, cost: 6
-[18:09:29] [Render thread/INFO] (Charm) [ExtraWanderingTrades] normal: white_bundle, count: 1, cost: 6
-[18:09:29] [Render thread/INFO] (Charm) [ExtraWanderingTrades] normal: red_bundle, count: 1, cost: 6
-[18:09:29] [Render thread/INFO] (Charm) [ExtraWanderingTrades] normal: magenta_bundle, count: 1, cost: 6
-[18:09:29] [Render thread/INFO] (Charm) [ExtraWanderingTrades] normal: light_blue_bundle, count: 1, cost: 6
-[18:09:29] [Render thread/INFO] (Charm) [ExtraWanderingTrades] normal: cyan_bundle, count: 1, cost: 6
-[18:09:29] [Render thread/INFO] (Charm) [ExtraWanderingTrades] normal: blue_bundle, count: 1, cost: 6
-[18:09:29] [Render thread/INFO] (Charm) [ExtraWanderingTrades] normal: light_gray_bundle, count: 1, cost: 6
-[18:09:29] [Render thread/INFO] (Charm) [ExtraWanderingTrades] normal: gunpowder_block, count: 1, cost: 5
-[18:09:29] [Render thread/INFO] (Charm) [ExtraWanderingTrades] normal: black_bundle, count: 1, cost: 6
-[18:09:29] [Render thread/INFO] (Charm) [ExtraWanderingTrades] normal: green_bundle, count: 1, cost: 6
-[18:09:29] [Render thread/INFO] (Charm) [ExtraWanderingTrades] normal: purple_bundle, count: 1, cost: 6
-[18:09:29] [Render thread/INFO] (Charm) [ExtraWanderingTrades] normal: gray_bundle, count: 1, cost: 6
-[18:09:29] [Render thread/INFO] (Charm) [ExtraWanderingTrades] normal: pink_bundle, count: 1, cost: 6
-[18:09:29] [Render thread/INFO] (Charm) [ExtraWanderingTrades] normal: sugar_block, count: 1, cost: 5
-[18:09:29] [Render thread/INFO] (Charm) [ExtraWanderingTrades] rare: item.charm.bat_bucket, count: 1, cost: 8
-[18:09:29] [Render thread/INFO] (Charm) [ExtraWanderingTrades] rare: bat_bucket, count: 1, cost: 8
-[18:09:29] [Render thread/INFO] (Charm) [ExtraWanderingTrades] rare: block.charm.horn_sea_lantern, count: 3, cost: 10
-[18:09:29] [Render thread/INFO] (Charm) [ExtraWanderingTrades] rare: horn_sea_lantern, count: 3, cost: 10
-[18:09:29] [Render thread/INFO] (Charm) [ExtraWanderingTrades] rare: item.charm.endermite_powder, count: 3, cost: 12
-[18:09:29] [Render thread/INFO] (Charm) [ExtraWanderingTrades] rare: endermite_powder, count: 3, cost: 12
-[18:09:29] [Render thread/INFO] (Charm) [ExtraWanderingTrades] rare: item.charm.coral_squid_bucket, count: 1, cost: 10
-[18:09:29] [Render thread/INFO] (Charm) [ExtraWanderingTrades] rare: coral_squid_bucket, count: 1, cost: 10
-[18:09:29] [Render thread/INFO] (Charm) [ExtraWanderingTrades] rare: block.charm.ender_pearl_block, count: 1, cost: 8
-[18:09:29] [Render thread/INFO] (Charm) [ExtraWanderingTrades] rare: ender_pearl_block, count: 1, cost: 8
-[18:09:29] [Render thread/INFO] (Charm) [ExtraWanderingTrades] rare: block.charm.bubble_sea_lantern, count: 3, cost: 10
-[18:09:29] [Render thread/INFO] (Charm) [ExtraWanderingTrades] rare: bubble_sea_lantern, count: 3, cost: 10
-[18:09:29] [Render thread/INFO] (Charm) [ExtraWanderingTrades] rare: block.charm.fire_sea_lantern, count: 3, cost: 10
-[18:09:29] [Render thread/INFO] (Charm) [ExtraWanderingTrades] rare: fire_sea_lantern, count: 3, cost: 10
-[18:09:29] [Render thread/INFO] (Charm) [ExtraWanderingTrades] rare: block.charm.tube_sea_lantern, count: 3, cost: 10
-[18:09:29] [Render thread/INFO] (Charm) [ExtraWanderingTrades] rare: tube_sea_lantern, count: 3, cost: 10
-[18:09:29] [Render thread/INFO] (Charm) [ExtraWanderingTrades] rare: block.charm.ebony_sapling, count: 1, cost: 15
-[18:09:29] [Render thread/INFO] (Charm) [ExtraWanderingTrades] rare: ebony_sapling, count: 1, cost: 15
-[18:09:29] [Render thread/INFO] (Charm) [ExtraWanderingTrades] rare: block.charm.brain_sea_lantern, count: 3, cost: 10
-[18:09:29] [Render thread/INFO] (Charm) [ExtraWanderingTrades] rare: brain_sea_lantern, count: 3, cost: 10
-[18:09:29] [Render thread/INFO] (Charm) [ModuleLoader] Running ExtractEnchantments
-[18:09:29] [Render thread/INFO] (Charm) [ModuleLoader] Running GentlePotionParticles
-[18:09:29] [Render thread/INFO] (Charm) [ModuleLoader] Running GoatsDropMutton
-[18:09:29] [Render thread/INFO] (Charm) [ModuleLoader] Running GrindableArmor
-[18:09:29] [Render thread/INFO] (Charm) [ModuleLoader] Running HoverSorting
-[18:09:29] [Render thread/INFO] (Charm) [ModuleLoader] Running HusksDropSand
-[18:09:29] [Render thread/INFO] (Charm) [ModuleLoader] Running HusksSpawnUnderground
-[18:09:29] [Render thread/INFO] (Charm) [ModuleLoader] Running ImprovedFortressLoot
-[18:09:29] [Render thread/INFO] (Charm) [ModuleLoader] Running ImprovedMansionLoot
-[18:09:29] [Render thread/INFO] (Charm) [ModuleLoader] Running ImprovedMineshafts
-[18:09:29] [Render thread/INFO] (Charm) [ModuleLoader] Running InventoryTidying
-[18:09:29] [Render thread/INFO] (Charm) [ModuleLoader] Running Kilns
-[18:09:29] [Render thread/INFO] (Charm) [ModuleLoader] Running LavaBucketDestroysItems
-[18:09:29] [Render thread/INFO] (Charm) [ModuleLoader] Running LowerNoteblockPitch
-[18:09:29] [Render thread/INFO] (Charm) [ModuleLoader] Running Lumberjacks
-[18:09:29] [Render thread/INFO] (Charm) [ModuleLoader] Running MapTooltip
-[18:09:29] [Render thread/INFO] (Charm) [ModuleLoader] Running Mooblooms
-[18:09:29] [Render thread/INFO] (Charm) [ModuleLoader] Running MorePortalFrames
-[18:09:29] [Render thread/INFO] (Charm) [ModuleLoader] Running NoCropTrampling
-[18:09:29] [Render thread/INFO] (Charm) [ModuleLoader] Running NoPetDamage
-[18:09:29] [Render thread/INFO] (Charm) [ModuleLoader] Running NoPotionGlint
-[18:09:29] [Render thread/INFO] (Charm) [ModuleLoader] Running NoSpyglassScope
-[18:09:29] [Render thread/INFO] (Charm) [ModuleLoader] Running OpenBothDoors
-[18:09:29] [Render thread/INFO] (Charm) [ModuleLoader] Running ParrotsStayOnShoulder
-[18:09:29] [Render thread/INFO] (Charm) [ModuleLoader] Running PathToDirt
-[18:09:29] [Render thread/INFO] (Charm) [ModuleLoader] Running PlayerPressurePlates
-[18:09:29] [Render thread/INFO] (Charm) [ModuleLoader] Running PortableCrafting
-[18:09:29] [Render thread/INFO] (Charm) [ModuleLoader] Running QuickReplant
-[18:09:29] [Render thread/INFO] (Charm) [ModuleLoader] Running RaidHorns
-[18:09:29] [Render thread/INFO] (Charm) [ModuleLoader] Running RedstoneLanterns
-[18:09:29] [Render thread/INFO] (Charm) [ModuleLoader] Running RedstoneSand
-[18:09:29] [Render thread/INFO] (Charm) [ModuleLoader] Running RepairElytraFromLeather
-[18:09:29] [Render thread/INFO] (Charm) [ModuleLoader] Running RepairNetheriteFromScrap
-[18:09:29] [Render thread/INFO] (Charm) [ModuleLoader] Running RepairTridentsFromShards
-[18:09:29] [Render thread/INFO] (Charm) [ModuleLoader] Running ShowRepairCost
-[18:09:29] [Render thread/INFO] (Charm) [ModuleLoader] Running ShulkerBoxDragDrop
-[18:09:29] [Render thread/INFO] (Charm) [ModuleLoader] Running ShulkerBoxTooltip
-[18:09:29] [Render thread/INFO] (Charm) [ModuleLoader] Running SmoothGlowstone
-[18:09:29] [Render thread/INFO] (Charm) [ModuleLoader] Running SnowAccumulation
-[18:09:29] [Render thread/INFO] (Charm) [ModuleLoader] Running StackableEnchantedBooks
-[18:09:29] [Render thread/INFO] (Charm) [ModuleLoader] Running StackablePotions
-[18:09:29] [Render thread/INFO] (Charm) [ModuleLoader] Running StackableStews
-[18:09:29] [Render thread/INFO] (Charm) [ModuleLoader] Running StraysDropBlueIce
-[18:09:29] [Render thread/INFO] (Charm) [ModuleLoader] Running StraysSpawnUnderground
-[18:09:29] [Render thread/INFO] (Charm) [ModuleLoader] Running StrongerAnvils
-[18:09:29] [Render thread/INFO] (Charm) [ModuleLoader] Running TotemOfPreserving
-[18:09:29] [Render thread/INFO] (Charm) [ModuleLoader] Running TotemWorksFromInventory
-[18:09:29] [Render thread/INFO] (Charm) [ModuleLoader] Running VariantBarrels
-[18:09:29] [Render thread/INFO] (Charm) [ModuleLoader] Running VariantBars
-[18:09:29] [Render thread/INFO] (Charm) [ModuleLoader] Running VariantBookshelves
-[18:09:29] [Render thread/INFO] (Charm) [ModuleLoader] Running VariantChains
-[18:09:29] [Render thread/INFO] (Charm) [ModuleLoader] Running VariantChests
-[18:09:29] [Render thread/INFO] (Charm) [ModuleLoader] Running VariantLadders
-[18:09:29] [Render thread/INFO] (Charm) [ModuleLoader] Running VariantLanterns
-[18:09:29] [Render thread/INFO] (Charm) [ModuleLoader] Running VariantMobTextures
-[18:09:29] [Render thread/INFO] (Charm) [ModuleLoader] Running VillagersFollowEmeraldBlocks
-[18:09:29] [Render thread/INFO] (Charm) [ModuleLoader] Running WeatheringIron
-[18:09:29] [Render thread/INFO] (Charm) [ModuleLoader] Running WitchesDropLuck
-[18:09:29] [Render thread/INFO] (Charm) [ModuleLoader] Running Woodcutters
-[18:09:29] [Render thread/INFO] (Charm) [ModuleLoader] Running disabled tasks: AutomaticRecipeUnlock
-[18:09:29] [Render thread/INFO] (Charm) [ModuleLoader] Running disabled tasks: BumblezoneIntegration
-[18:09:29] [Render thread/INFO] (Charm) [ModuleLoader] Running disabled tasks: NoChatVerifiedNag
-[18:09:29] [Render thread/INFO] (Charm) [ModuleLoader] Running disabled tasks: NoCuredVillagerDiscount
-[18:09:29] [Render thread/INFO] (Charm) [ModuleLoader] Running disabled tasks: NoNitwits
-[18:09:29] [Render thread/INFO] (Charm) [ModuleLoader] Running disabled tasks: NoTreasureEnchantmentTrading
-[18:09:29] [Render thread/INFO] (Charm) [ModuleLoader] Running disabled tasks: RespawnAnchorInTheEnd
-[18:09:29] [Render thread/INFO] (Charm) [AdvancementHelper] Adding `charm:no_chat_verified_nag` to list of advancements to remove
-[18:09:29] [Render thread/INFO] (Charm) [AdvancementHelper] Adding `charm:automatic_recipe_unlock` to list of advancements to remove
-[18:09:29] [Render thread/INFO] (Charm) [AdvancementHelper] Adding `charm:bumblezone_integration` to list of advancements to remove
-[18:09:29] [Render thread/INFO] (Charm) [AdvancementHelper] Adding `charm:no_nitwits` to list of advancements to remove
-[18:09:29] [Render thread/INFO] (Charm) [AdvancementHelper] Adding `charm:respawn_anchor_in_the_end` to list of advancements to remove
-[18:09:29] [Render thread/INFO] (Charm) [AdvancementHelper] Adding `charm:no_treasure_enchantment_trading` to list of advancements to remove
-[18:09:29] [Render thread/INFO] (Charm) [AdvancementHelper] Adding `charm:no_cured_villager_discount` to list of advancements to remove
-[18:09:29] [Render thread/INFO] (Indigo) [Indigo] Registering Indigo renderer!
-[18:09:30] [Render thread/INFO] (Charm) [ModuleLoader] Registering AtlasesClient
-[18:09:30] [Render thread/INFO] (Charm) [ModuleLoader] Registering AzaleaWoodClient
-[18:09:30] [Render thread/INFO] (Charm) [ModuleLoader] Registering BookcasesClient
-[18:09:30] [Render thread/INFO] (Charm) [ModuleLoader] Registering ChairsClient
-[18:09:30] [Render thread/INFO] (Charm) [ModuleLoader] Registering ClearItemFramesClient
-[18:09:30] [Render thread/INFO] (Charm) [ModuleLoader] Registering ColoredBundlesClient
-[18:09:30] [Render thread/INFO] (Charm) [ModuleLoader] Registering ColoredNetherPortalsClient
-[18:09:30] [Render thread/INFO] (Charm) [ModuleLoader] Registering CompassOverlayClient
-[18:09:30] [Render thread/INFO] (Charm) [ModuleLoader] Registering CoralSquidsClient
-[18:09:30] [Render thread/INFO] (Charm) [ModuleLoader] Registering CoreClient
-[18:09:30] [Render thread/INFO] (Charm) [ModuleLoader] Registering DiscsStopBackgroundMusicClient
-[18:09:30] [Render thread/INFO] (Charm) [ModuleLoader] Registering EbonyWoodClient
-[18:09:30] [Render thread/INFO] (Charm) [ModuleLoader] Registering EndermitePowderClient
-[18:09:30] [Render thread/INFO] (Charm) [ModuleLoader] Registering ExtractEnchantmentsClient
-[18:09:30] [Render thread/INFO] (Charm) [ModuleLoader] Registering HoverSortingClient
-[18:09:30] [Render thread/INFO] (Charm) [ModuleLoader] Registering InventoryTidyingClient
-[18:09:30] [Render thread/INFO] (Charm) [ModuleLoader] Registering KilnsClient
-[18:09:30] [Render thread/INFO] (Charm) [ModuleLoader] Registering MapTooltipClient
-[18:09:30] [Render thread/INFO] (Charm) [ModuleLoader] Registering MoobloomsClient
-[18:09:30] [Render thread/INFO] (Charm) [ModuleLoader] Registering PortableCraftingClient
-[18:09:30] [Render thread/INFO] (Charm) [ModuleLoader] Registering RedstoneLanternsClient
-[18:09:30] [Render thread/INFO] (Charm) [ModuleLoader] Registering ShulkerBoxTooltipClient
-[18:09:30] [Render thread/INFO] (Charm) [ModuleLoader] Registering TotemOfPreservingClient
-[18:09:30] [Render thread/INFO] (Charm) [ModuleLoader] Registering VariantBarsClient
-[18:09:30] [Render thread/INFO] (Charm) [ModuleLoader] Registering VariantChainsClient
-[18:09:30] [Render thread/INFO] (Charm) [ModuleLoader] Registering VariantChestsClient
-[18:09:30] [Render thread/INFO] (Charm) [ModuleLoader] Registering VariantLaddersClient
-[18:09:30] [Render thread/INFO] (Charm) [ModuleLoader] Registering VariantLanternsClient
-[18:09:30] [Render thread/INFO] (Charm) [ModuleLoader] Registering VariantMobTexturesClient
-[18:09:30] [Render thread/INFO] (Charm) [ModuleLoader] Registering WoodcuttersClient
-[18:09:30] [Render thread/INFO] (Charm) [ModuleLoader] Enabled AtlasesClient
-[18:09:30] [Render thread/INFO] (Charm) [ModuleLoader] Enabled AzaleaWoodClient
-[18:09:30] [Render thread/INFO] (Charm) [ModuleLoader] Enabled BookcasesClient
-[18:09:30] [Render thread/INFO] (Charm) [ModuleLoader] Enabled ChairsClient
-[18:09:30] [Render thread/INFO] (Charm) [ModuleLoader] Enabled ClearItemFramesClient
-[18:09:30] [Render thread/INFO] (Charm) [ModuleLoader] Enabled ColoredBundlesClient
-[18:09:30] [Render thread/INFO] (Charm) [ModuleLoader] Enabled ColoredNetherPortalsClient
-[18:09:30] [Render thread/INFO] (Charm) [ModuleLoader] Enabled CompassOverlayClient
-[18:09:30] [Render thread/INFO] (Charm) [ModuleLoader] Enabled CoralSquidsClient
-[18:09:30] [Render thread/INFO] (Charm) [ModuleLoader] Enabled CoreClient
-[18:09:30] [Render thread/INFO] (Charm) [ModuleLoader] Enabled DiscsStopBackgroundMusicClient
-[18:09:30] [Render thread/INFO] (Charm) [ModuleLoader] Enabled EbonyWoodClient
-[18:09:30] [Render thread/INFO] (Charm) [ModuleLoader] Enabled EndermitePowderClient
-[18:09:30] [Render thread/INFO] (Charm) [ModuleLoader] Enabled ExtractEnchantmentsClient
-[18:09:30] [Render thread/INFO] (Charm) [ModuleLoader] Enabled HoverSortingClient
-[18:09:30] [Render thread/INFO] (Charm) [ModuleLoader] Enabled InventoryTidyingClient
-[18:09:30] [Render thread/INFO] (Charm) [ModuleLoader] Enabled KilnsClient
-[18:09:30] [Render thread/INFO] (Charm) [ModuleLoader] Enabled MapTooltipClient
-[18:09:30] [Render thread/INFO] (Charm) [ModuleLoader] Enabled MoobloomsClient
-[18:09:30] [Render thread/INFO] (Charm) [ModuleLoader] Enabled PortableCraftingClient
-[18:09:30] [Render thread/INFO] (Charm) [ModuleLoader] Enabled RedstoneLanternsClient
-[18:09:30] [Render thread/INFO] (Charm) [ModuleLoader] Enabled ShulkerBoxTooltipClient
-[18:09:30] [Render thread/INFO] (Charm) [ModuleLoader] Enabled TotemOfPreservingClient
-[18:09:30] [Render thread/INFO] (Charm) [ModuleLoader] Enabled VariantBarsClient
-[18:09:30] [Render thread/INFO] (Charm) [ModuleLoader] Enabled VariantChainsClient
-[18:09:30] [Render thread/INFO] (Charm) [ModuleLoader] Enabled VariantChestsClient
-[18:09:30] [Render thread/INFO] (Charm) [ModuleLoader] Enabled VariantLaddersClient
-[18:09:30] [Render thread/INFO] (Charm) [ModuleLoader] Enabled VariantLanternsClient
-[18:09:30] [Render thread/INFO] (Charm) [ModuleLoader] Enabled VariantMobTexturesClient
-[18:09:30] [Render thread/INFO] (Charm) [ModuleLoader] Enabled WoodcuttersClient
-[18:09:30] [Render thread/INFO] (Charm) [ModuleLoader] Running AtlasesClient
-[18:09:30] [Render thread/INFO] (Charm) [ModuleLoader] Running AzaleaWoodClient
-[18:09:30] [Render thread/INFO] (Charm) [ModuleLoader] Running BookcasesClient
-[18:09:30] [Render thread/INFO] (Charm) [ModuleLoader] Running ChairsClient
-[18:09:30] [Render thread/INFO] (Charm) [ModuleLoader] Running ClearItemFramesClient
-[18:09:30] [Render thread/INFO] (Charm) [ModuleLoader] Running ColoredBundlesClient
-[18:09:30] [Render thread/INFO] (Charm) [ModuleLoader] Running ColoredNetherPortalsClient
-[18:09:30] [Render thread/INFO] (Charm) [ModuleLoader] Running CompassOverlayClient
-[18:09:30] [Render thread/INFO] (Charm) [ModuleLoader] Running CoralSquidsClient
-[18:09:30] [Render thread/INFO] (Charm) [ModuleLoader] Running CoreClient
-[18:09:30] [Render thread/INFO] (Charm) [ModuleLoader] Running DiscsStopBackgroundMusicClient
-[18:09:30] [Render thread/INFO] (Charm) [ModuleLoader] Running EbonyWoodClient
-[18:09:30] [Render thread/INFO] (Charm) [ModuleLoader] Running EndermitePowderClient
-[18:09:30] [Render thread/INFO] (Charm) [ModuleLoader] Running ExtractEnchantmentsClient
-[18:09:30] [Render thread/INFO] (Charm) [ModuleLoader] Running HoverSortingClient
-[18:09:30] [Render thread/INFO] (Charm) [ModuleLoader] Running InventoryTidyingClient
-[18:09:30] [Render thread/INFO] (Charm) [ModuleLoader] Running KilnsClient
-[18:09:30] [Render thread/INFO] (Charm) [ModuleLoader] Running MapTooltipClient
-[18:09:30] [Render thread/INFO] (Charm) [ModuleLoader] Running MoobloomsClient
-[18:09:30] [Render thread/INFO] (Charm) [ModuleLoader] Running PortableCraftingClient
-[18:09:30] [Render thread/INFO] (Charm) [ModuleLoader] Running RedstoneLanternsClient
-[18:09:30] [Render thread/INFO] (Charm) [ModuleLoader] Running ShulkerBoxTooltipClient
-[18:09:30] [Render thread/INFO] (Charm) [ModuleLoader] Running TotemOfPreservingClient
-[18:09:30] [Render thread/INFO] (Charm) [ModuleLoader] Running VariantBarsClient
-[18:09:30] [Render thread/INFO] (Charm) [ModuleLoader] Running VariantChainsClient
-[18:09:30] [Render thread/INFO] (Charm) [ModuleLoader] Running VariantChestsClient
-[18:09:30] [Render thread/INFO] (Charm) [ModuleLoader] Running VariantLaddersClient
-[18:09:30] [Render thread/INFO] (Charm) [ModuleLoader] Running VariantLanternsClient
-[18:09:30] [Render thread/INFO] (Charm) [ModuleLoader] Running VariantMobTexturesClient
-[18:09:30] [Render thread/INFO] (Charm) [ModuleLoader] Running WoodcuttersClient
-[18:09:30] [Render thread/INFO] (Minecraft) Backend library: LWJGL version 3.3.1 SNAPSHOT
-[18:09:31] [Worker-Main-9/ERROR] (Minecraft) Failed to retrieve profile key pair
-java.io.IOException: Could not retrieve profile key pair
-	at net.minecraft.client.multiplayer.ProfileKeyPairManager.fetchProfileKeyPair(ProfileKeyPairManager.java:152) ~[minecraft-project-@-merged-named.jar:?]
-	at net.minecraft.client.multiplayer.ProfileKeyPairManager.method_44291(ProfileKeyPairManager.java:77) ~[minecraft-project-@-merged-named.jar:?]
-	at java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768) [?:?]
-	at java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1760) [?:?]
-	at java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:373) [?:?]
-	at java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1182) [?:?]
-	at java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1655) [?:?]
-	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1622) [?:?]
-	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165) [?:?]
-[18:09:31] [Render thread/INFO] (Minecraft) Reloading ResourceManager: Default, Fabric Mods (Fabric Resource Conditions API (v1), Fabric Models (v0), Fabric Crash Report Info (v1), Fabric Mining Level API (v1), Fabric Renderer - Indigo, Fabric Item API (v1), Fabric Rendering Fluids (v1), Fabric Convention Tags, Fabric Item Groups (v0), Fabric Loader, Fabric API Base, Fabric Recipe API (v1), Cloth Config v8, Fabric Events Interaction (v0), Fabric Dimensions API (v1), Charm, Fabric Game Test API (v1), Fabric Data Generation API (v1), Fabric BlockRenderLayer Registration (v1), Fabric Particles (v1), Fabric Transitive Access Wideners (v1), Fabric Resource Loader (v0), Fabric Screen Handler API (v1), Fabric Networking API (v1), Fabric Lifecycle Events (v1), Mod Menu, Reinforced Shulker Boxes, Fabric Message API (v1), Quick Shulker, Fabric Transfer API (v1), Fabric Textures (v0), Fabric Block API (v1), Fabric Entity Events (v1), Fabric Renderer API (v1), Shulker Box Tooltip, Fabric Key Binding API (v1), Reinforced Core, Fabric Biome API (v1), Fabric Object Builder API (v1), Fabric Rendering Data Attachment (v1), Fabric Game Rule API (v1), Fabric API, Fabric Rendering (v1), Fabric Sound API (v1), Fabric Registry Sync (v0), Fabric Screen API (v1), Fabric Client Tags, Fabric Content Registries (v0), Fabric Loot API (v2), Fabric API Lookup API (v1), Reinforced Chests, Fabric Command API (v2), Kyrpt Config)
-[18:09:32] [Realms Notification Availability checker #1/INFO] (Minecraft) Could not authorize you against Realms server: Invalid session id
-[18:09:35] [Render thread/WARN] (Minecraft) Missing sound for event: minecraft:item.goat_horn.play
-[18:09:35] [Render thread/WARN] (Minecraft) Missing sound for event: minecraft:entity.goat.screaming.horn_break
-[18:09:37] [Render thread/INFO] (Minecraft) OpenAL initialized on device CoreAudio Default
-[18:09:37] [Render thread/INFO] (Minecraft) Sound engine started
-[18:09:37] [Render thread/INFO] (Minecraft) Created: 1024x1024x4 minecraft:textures/atlas/blocks.png-atlas
-[18:09:37] [Render thread/INFO] (Minecraft) Created: 512x256x4 reinfshulker:textures/atlas/iron_shulker_boxes.png-atlas
-[18:09:37] [Render thread/INFO] (Minecraft) Created: 1024x1024x4 minecraft:textures/atlas/chest.png-atlas
-[18:09:37] [Render thread/INFO] (Minecraft) Created: 512x256x4 minecraft:textures/atlas/shulker_boxes.png-atlas
-[18:09:37] [Render thread/INFO] (Minecraft) Created: 512x256x4 reinfshulker:textures/atlas/diamond_shulker_boxes.png-atlas
-[18:09:37] [Render thread/INFO] (Minecraft) Created: 128x128x4 reinfchest:textures/atlas/gold_chest.png-atlas
-[18:09:37] [Render thread/INFO] (Minecraft) Created: 512x256x4 reinfshulker:textures/atlas/copper_shulker_boxes.png-atlas
-[18:09:37] [Render thread/INFO] (Minecraft) Created: 256x128x4 minecraft:textures/atlas/signs.png-atlas
-[18:09:37] [Render thread/INFO] (Minecraft) Created: 128x128x4 reinfchest:textures/atlas/diamond_chest.png-atlas
-[18:09:37] [Render thread/INFO] (Minecraft) Created: 1024x512x4 minecraft:textures/atlas/banner_patterns.png-atlas
-[18:09:37] [Render thread/INFO] (Minecraft) Created: 1024x512x4 minecraft:textures/atlas/shield_patterns.png-atlas
-[18:09:37] [Render thread/INFO] (Minecraft) Created: 128x128x4 reinfchest:textures/atlas/copper_chest.png-atlas
-[18:09:37] [Render thread/INFO] (Minecraft) Created: 128x128x4 reinfchest:textures/atlas/iron_chest.png-atlas
-[18:09:37] [Render thread/INFO] (Minecraft) Created: 128x128x4 reinfchest:textures/atlas/netherite_chest.png-atlas
-[18:09:37] [Render thread/INFO] (Minecraft) Created: 512x256x4 minecraft:textures/atlas/beds.png-atlas
-[18:09:37] [Render thread/INFO] (Minecraft) Created: 512x256x4 reinfshulker:textures/atlas/netherite_shulker_boxes.png-atlas
-[18:09:37] [Render thread/INFO] (Minecraft) Created: 512x256x4 reinfshulker:textures/atlas/gold_shulker_boxes.png-atlas
-[18:09:39] [Render thread/WARN] (Minecraft) Shader rendertype_entity_translucent_emissive could not find sampler named Sampler2 in the specified shader program.
-[18:09:39] [Render thread/INFO] (Minecraft) Created: 512x256x0 minecraft:textures/atlas/particles.png-atlas
-[18:09:39] [Render thread/INFO] (Minecraft) Created: 256x256x0 minecraft:textures/atlas/paintings.png-atlas
-[18:09:39] [Render thread/INFO] (Minecraft) Created: 256x128x0 minecraft:textures/atlas/mob_effects.png-atlas
-[18:10:05] [Render thread/INFO] (FabricRegistrySync) [fabric-registry-sync] Loaded registry data [file 1/4]
-[18:10:06] [Render thread/INFO] (Minecraft) Loaded 9 recipes
-[18:10:06] [Render thread/INFO] (Minecraft) Loaded 1239 advancements
-[18:10:06] [Render thread/INFO] (Charm) [SortingRecipeManager] net.minecraft.world.item.crafting.RecipeManager@1a2be0bc
-[18:10:06] [Render thread/INFO] (Charm) [RecipeHelper] Preparing to sort and filter recipes
-[18:10:06] [Render thread/INFO] (Charm) [RecipeHelper] Recipe type `smithing` contains 27 recipes
-[18:10:06] [Render thread/INFO] (Charm) [RecipeHelper] Recipe type `smithing` reassembled with 27 recipes
-[18:10:06] [Render thread/INFO] (Charm) [RecipeHelper] Recipe type `charm:woodcutting` contains 186 recipes
-[18:10:06] [Render thread/INFO] (Charm) [RecipeHelper] Recipe type `charm:woodcutting` reassembled with 186 recipes
-[18:10:06] [Render thread/INFO] (Charm) [RecipeHelper] Recipe type `blasting` contains 27 recipes
-[18:10:06] [Render thread/INFO] (Charm) [RecipeHelper] Recipe type `blasting` reassembled with 27 recipes
-[18:10:06] [Render thread/INFO] (Charm) [RecipeHelper] Recipe type `stonecutting` contains 241 recipes
-[18:10:06] [Render thread/INFO] (Charm) [RecipeHelper] Recipe type `stonecutting` reassembled with 241 recipes
-[18:10:06] [Render thread/INFO] (Charm) [RecipeHelper] Recipe type `charm:firing` contains 29 recipes
-[18:10:06] [Render thread/INFO] (Charm) [RecipeHelper] Recipe type `charm:firing` reassembled with 29 recipes
-[18:10:06] [Render thread/INFO] (Charm) [RecipeHelper] Recipe type `smoking` contains 9 recipes
-[18:10:06] [Render thread/INFO] (Charm) [RecipeHelper] Recipe type `smoking` reassembled with 9 recipes
-[18:10:06] [Render thread/INFO] (Charm) [RecipeHelper] Recipe type `campfire_cooking` contains 9 recipes
-[18:10:06] [Render thread/INFO] (Charm) [RecipeHelper] Recipe type `campfire_cooking` reassembled with 9 recipes
-[18:10:06] [Render thread/INFO] (Charm) [RecipeHelper] Recipe type `smelting` contains 71 recipes
-[18:10:06] [Render thread/INFO] (Charm) [RecipeHelper] Recipe type `smelting` reassembled with 71 recipes
-[18:10:06] [Render thread/INFO] (Charm) [RecipeHelper] Recipe type `crafting` contains 1027 recipes
-[18:10:06] [Render thread/INFO] (Charm) [RecipeHelper] Recipe type `crafting` reassembled with 1027 recipes
-[18:10:07] [Worker-Main-10/ERROR] (Minecraft) Failed to retrieve profile key pair
-java.io.IOException: Could not retrieve profile key pair
-	at net.minecraft.client.multiplayer.ProfileKeyPairManager.fetchProfileKeyPair(ProfileKeyPairManager.java:152) ~[minecraft-project-@-merged-named.jar:?]
-	at net.minecraft.client.multiplayer.ProfileKeyPairManager.method_44291(ProfileKeyPairManager.java:77) ~[minecraft-project-@-merged-named.jar:?]
-	at java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768) [?:?]
-	at java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1760) [?:?]
-	at java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:373) [?:?]
-	at java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1182) [?:?]
-	at java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1655) [?:?]
-	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1622) [?:?]
-	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165) [?:?]
-[18:10:08] [Render thread/INFO] (BiomeModificationImpl) Applied 2 biome modifications to 2 of 63 new biomes in 5.415 ms
-[18:10:08] [Server thread/INFO] (Minecraft) Starting integrated minecraft server version 1.19.2
-[18:10:08] [Server thread/INFO] (Minecraft) Generating keypair
-[18:10:08] [Server thread/INFO] (Minecraft) Preparing start region for dimension minecraft:overworld
-[18:10:11] [Render thread/INFO] (Minecraft) Preparing spawn area: 0%
-[18:10:11] [Render thread/INFO] (Minecraft) Preparing spawn area: 0%
-[18:10:11] [Render thread/INFO] (Minecraft) Preparing spawn area: 0%
-[18:10:11] [Render thread/INFO] (Minecraft) Preparing spawn area: 0%
-[18:10:11] [Render thread/INFO] (Minecraft) Preparing spawn area: 0%
-[18:10:11] [Render thread/INFO] (Minecraft) Preparing spawn area: 0%
-[18:10:11] [Render thread/INFO] (Minecraft) Preparing spawn area: 0%
-[18:10:11] [Render thread/INFO] (Minecraft) Preparing spawn area: 0%
-[18:10:12] [Render thread/INFO] (Minecraft) Preparing spawn area: 0%
-[18:10:12] [Render thread/INFO] (Minecraft) Preparing spawn area: 0%
-[18:10:13] [Render thread/INFO] (Minecraft) Preparing spawn area: 0%
-[18:10:14] [Render thread/INFO] (Minecraft) Preparing spawn area: 0%
-[18:10:14] [Render thread/INFO] (Minecraft) Preparing spawn area: 18%
-[18:10:14] [Render thread/INFO] (Minecraft) Preparing spawn area: 46%
-[18:10:15] [Render thread/INFO] (Minecraft) Preparing spawn area: 86%
-[18:10:15] [Render thread/INFO] (Minecraft) Time elapsed: 7137 ms
-[18:10:15] [Server thread/INFO] (Minecraft) Changing view distance to 12, from 10
-[18:10:15] [Server thread/INFO] (Minecraft) Changing simulation distance to 12, from 0
-[18:10:17] [Server thread/INFO] (Minecraft) Player679[local:E:7caf5255] logged in with entity id 1 at (6.477273848574133, -60.0, 5.573338970367582)
-[18:10:17] [Server thread/INFO] (Charm) [ServerSendSwappedSlot] Sending message `strange:swapped_atlas_slot` to def15adf-07af-3672-a35b-fe69f139863f
-[18:10:17] [Server thread/INFO] (Minecraft) Player679 joined the game
-[18:10:19] [Netty Local Client IO #0/INFO] (Charm) [ClientReceiveSwappedSlot] Received message `strange:swapped_atlas_slot` from server.
-[18:10:19] [Render thread/INFO] (ShulkerBoxTooltip) [ShulkerBoxTooltip] Server integration enabled, attempting handshake...
-[18:10:19] [Netty Server IO #1/INFO] (ShulkerBoxTooltip) [ShulkerBoxTooltip] Player679: protocol version: 2.0
-[18:10:19] [Netty Local Client IO #0/INFO] (ShulkerBoxTooltip) [ShulkerBoxTooltip] Handshake succeeded
-[18:10:19] [Netty Local Client IO #0/INFO] (ShulkerBoxTooltip) [ShulkerBoxTooltip] Server protocol version: 2.0
-[18:10:19] [Server thread/INFO] (ShulkerBoxTooltip) [ShulkerBoxTooltip] Loading 2 plugins: reinfshulker, shulkerboxtooltip
-[18:10:19] [Server thread/INFO] (ShulkerBoxTooltip) [ShulkerBoxTooltip] Registered 5 providers for mod reinfshulker
-[18:10:19] [Server thread/INFO] (ShulkerBoxTooltip) [ShulkerBoxTooltip] Registered 7 providers for mod shulkerboxtooltip
-[18:10:20] [Render thread/INFO] (Minecraft) Loaded 48 advancements
-[18:10:29] [Worker-Bootstrap-6/INFO] (Minecraft) 4283 Datafixer optimizations took 63828 milliseconds
-[18:10:58] [Server thread/INFO] (Minecraft) Saving and pausing game...
-[18:10:58] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/minecraft:overworld
-[18:10:58] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/minecraft:the_nether
-[18:10:58] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/minecraft:the_end
-[18:10:59] [Server thread/INFO] (Minecraft) Saving and pausing game...
-[18:10:59] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/minecraft:overworld
-[18:10:59] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/minecraft:the_nether
-[18:10:59] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/minecraft:the_end
-[18:10:59] [Server thread/INFO] (Minecraft) Player679 lost connection: Disconnected
-[18:10:59] [Server thread/INFO] (Minecraft) Player679 left the game
-[18:10:59] [Server thread/INFO] (Minecraft) Stopping singleplayer server as player logged out
-[18:10:59] [Server thread/INFO] (Minecraft) Stopping server
-[18:10:59] [Server thread/INFO] (Minecraft) Saving players
-[18:10:59] [Server thread/INFO] (Minecraft) Saving worlds
-[18:11:00] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/minecraft:overworld
-[18:11:00] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/minecraft:the_nether
-[18:11:00] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/minecraft:the_end
-[18:11:00] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage (New World): All chunks are saved
-[18:11:00] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
-[18:11:00] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage (DIM1): All chunks are saved
-[18:11:00] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage: All dimensions are saved
-[18:11:02] [Render thread/INFO] (Minecraft) Stopping!
+[16:24:07] [Render thread/INFO] (Minecraft) Setting user: Player906
+[16:24:09] [Render thread/INFO] (Charm) [ConfigHelper] In module Atlases: setting `Open in off hand` to `false`
+[16:24:09] [Render thread/INFO] (Charm) [ConfigHelper] In module Atlases: setting `Map scale` to `0`
+[16:24:09] [Render thread/INFO] (Charm) [ConfigHelper] In module Atlases: setting `Enable keybind` to `true`
+[16:24:09] [Render thread/INFO] (Charm) [ConfigHelper] In module BatBuckets: setting `Glowing time` to `10`
+[16:24:09] [Render thread/INFO] (Charm) [ConfigHelper] In module BatBuckets: setting `Viewing range` to `24`
+[16:24:09] [Render thread/INFO] (Charm) [ConfigHelper] In module BatBuckets: setting `Damage bat` to `true`
+[16:24:09] [Render thread/INFO] (Charm) [ConfigHelper] In module BlockOfEnderPearls: setting `Chorus teleport range` to `16`
+[16:24:09] [Render thread/INFO] (Charm) [ConfigHelper] In module BlockOfEnderPearls: setting `Chorus fruit teleport` to `true`
+[16:24:09] [Render thread/INFO] (Charm) [ConfigHelper] In module BlockOfEnderPearls: setting `Convert silverfish to endermite` to `true`
+[16:24:09] [Render thread/INFO] (Charm) [ConfigHelper] In module Bookcases: setting `Valid items` to `[minecraft:book, minecraft:enchanted_book, minecraft:written_book, minecraft:writable_book, minecraft:knowledge_book, minecraft:paper, minecraft:map, minecraft:filled_map]`
+[16:24:09] [Render thread/INFO] (Charm) [ConfigHelper] In module CaveSpidersDropCobwebs: setting `Maximum drops` to `2`
+[16:24:09] [Render thread/INFO] (Charm) [ConfigHelper] In module CompassOverlay: setting `Facing` to `true`
+[16:24:09] [Render thread/INFO] (Charm) [ConfigHelper] In module CompassOverlay: setting `Co-ordinates` to `true`
+[16:24:09] [Render thread/INFO] (Charm) [ConfigHelper] In module CompassOverlay: setting `Biome` to `true`
+[16:24:09] [Render thread/INFO] (Charm) [ConfigHelper] In module CompassOverlay: setting `Only show X and Z` to `false`
+[16:24:09] [Render thread/INFO] (Charm) [ConfigHelper] In module CompassOverlay: setting `Show when sneaking` to `false`
+[16:24:09] [Render thread/INFO] (Charm) [ConfigHelper] In module CoralSquids: setting `Drop chance` to `0.2`
+[16:24:09] [Render thread/INFO] (Charm) [ConfigHelper] In module CoralSquids: setting `Spawn weight` to `50`
+[16:24:09] [Render thread/INFO] (Charm) [ConfigHelper] In module Core: setting `Debug mode` to `true`
+[16:24:09] [Render thread/INFO] (Charm) [ConfigHelper] In module Core: setting `Advancements` to `true`
+[16:24:09] [Render thread/INFO] (Charm) [ConfigHelper] In module Core: setting `Allow zero cost anvil recipes` to `true`
+[16:24:09] [Render thread/INFO] (Charm) [ConfigHelper] In module EndermitePowder: setting `Maximum drops` to `2`
+[16:24:09] [Render thread/INFO] (Charm) [ConfigHelper] In module ExtraRecipes: setting `Ore block from raw ore block` to `true`
+[16:24:09] [Render thread/INFO] (Charm) [ConfigHelper] In module ExtraRecipes: setting `Gilded Blackstone` to `true`
+[16:24:09] [Render thread/INFO] (Charm) [ConfigHelper] In module ExtraRecipes: setting `Trident` to `true`
+[16:24:09] [Render thread/INFO] (Charm) [ConfigHelper] In module ExtraRecipes: setting `Cyan Dye from warped roots` to `true`
+[16:24:09] [Render thread/INFO] (Charm) [ConfigHelper] In module ExtraRecipes: setting `Green Dye from yellow and blue` to `true`
+[16:24:09] [Render thread/INFO] (Charm) [ConfigHelper] In module ExtraRecipes: setting `Snowballs from snow blocks` to `true`
+[16:24:09] [Render thread/INFO] (Charm) [ConfigHelper] In module ExtraRecipes: setting `Quartz from quartz blocks` to `true`
+[16:24:09] [Render thread/INFO] (Charm) [ConfigHelper] In module ExtraRecipes: setting `Clay balls from clay blocks` to `true`
+[16:24:09] [Render thread/INFO] (Charm) [ConfigHelper] In module ExtraRecipes: setting `Simpler Soul Torch` to `true`
+[16:24:09] [Render thread/INFO] (Charm) [ConfigHelper] In module ExtraRecipes: setting `Shapeless bread` to `true`
+[16:24:09] [Render thread/INFO] (Charm) [ConfigHelper] In module ExtraRecipes: setting `Shapeless paper` to `true`
+[16:24:09] [Render thread/INFO] (Charm) [ConfigHelper] In module ExtraRecipes: setting `Bundle from leather` to `true`
+[16:24:09] [Render thread/INFO] (Charm) [ConfigHelper] In module ExtraTrades: setting `Enchanted books` to `true`
+[16:24:09] [Render thread/INFO] (Charm) [ConfigHelper] In module ExtraTrades: setting `Repaired anvils` to `true`
+[16:24:09] [Render thread/INFO] (Charm) [ConfigHelper] In module ExtraTrades: setting `Leather for rotten flesh` to `true`
+[16:24:09] [Render thread/INFO] (Charm) [ConfigHelper] In module ExtraTrades: setting `Beef for rotten flesh` to `true`
+[16:24:09] [Render thread/INFO] (Charm) [ConfigHelper] In module ExtraTrades: setting `Bundles` to `true`
+[16:24:09] [Render thread/INFO] (Charm) [ConfigHelper] In module ExtractEnchantments: setting `Initial cost` to `5`
+[16:24:09] [Render thread/INFO] (Charm) [ConfigHelper] In module ExtractEnchantments: setting `Treasure cost` to `5`
+[16:24:09] [Render thread/INFO] (Charm) [ConfigHelper] In module ExtractEnchantments: setting `Add item repair cost` to `true`
+[16:24:09] [Render thread/INFO] (Charm) [ConfigHelper] In module GentlePotionParticles: setting `Translucent particles` to `true`
+[16:24:09] [Render thread/INFO] (Charm) [ConfigHelper] In module GoatsDropMutton: setting `Maximum drops` to `2`
+[16:24:09] [Render thread/INFO] (Charm) [ConfigHelper] In module HusksDropSand: setting `Maximum drops` to `2`
+[16:24:09] [Render thread/INFO] (Charm) [ConfigHelper] In module ImprovedMineshafts: setting `Corridor floor blocks` to `0.03`
+[16:24:09] [Render thread/INFO] (Charm) [ConfigHelper] In module ImprovedMineshafts: setting `Corridor ceiling blocks` to `0.02`
+[16:24:09] [Render thread/INFO] (Charm) [ConfigHelper] In module ImprovedMineshafts: setting `Corridor block piles` to `0.2`
+[16:24:09] [Render thread/INFO] (Charm) [ConfigHelper] In module ImprovedMineshafts: setting `Room blocks` to `0.25`
+[16:24:09] [Render thread/INFO] (Charm) [ConfigHelper] In module ImprovedMineshafts: setting `Extra minecarts` to `0.2`
+[16:24:09] [Render thread/INFO] (Charm) [ConfigHelper] In module ImprovedMineshafts: setting `Minecart loot tables` to `[chests/simple_dungeon, chests/abandoned_mineshaft, chests/village/village_temple, chests/village/village_cartographer, chests/village/village_mason, chests/village/village_toolsmith, chests/village/village_weaponsmith]`
+[16:24:09] [Render thread/INFO] (Charm) [ConfigHelper] In module NoCropTrampling: setting `Require feather falling` to `false`
+[16:24:09] [Render thread/INFO] (Charm) [ConfigHelper] In module PortableCrafting: setting `Enable keybind` to `true`
+[16:24:09] [Render thread/INFO] (Charm) [ConfigHelper] In module QuickReplant: setting `Replantable blockstates` to `[minecraft:beetroots[age=3], minecraft:carrots[age=7], minecraft:nether_wart[age=3], minecraft:potatoes[age=7], minecraft:wheat[age=7]]`
+[16:24:09] [Render thread/INFO] (Charm) [ConfigHelper] In module RaidHorns: setting `Drop chance` to `0.05`
+[16:24:09] [Render thread/INFO] (Charm) [ConfigHelper] In module RaidHorns: setting `Volume` to `0.75`
+[16:24:09] [Render thread/INFO] (Charm) [ConfigHelper] In module RepairElytraFromLeather: setting `Allow when insomnia enabled` to `false`
+[16:24:09] [Render thread/INFO] (Charm) [ConfigHelper] In module RepairNetheriteFromScrap: setting `XP cost` to `1`
+[16:24:09] [Render thread/INFO] (Charm) [ConfigHelper] In module RepairNetheriteFromScrap: setting `Repairable items` to `[netherite_hoe, netherite_shovel, netherite_axe, netherite_pickaxe, netherite_sword, netherite_helmet, netherite_chestplate, netherite_leggings, netherite_boots]`
+[16:24:09] [Render thread/INFO] (Charm) [ConfigHelper] In module SnowAccumulation: setting `Allow block replace` to `true`
+[16:24:09] [Render thread/INFO] (Charm) [ConfigHelper] In module SnowAccumulation: setting `Powder snow chance` to `0.01`
+[16:24:09] [Render thread/INFO] (Charm) [ConfigHelper] In module StackableEnchantedBooks: setting `Stack size` to `16`
+[16:24:09] [Render thread/INFO] (Charm) [ConfigHelper] In module StackablePotions: setting `Stack size` to `16`
+[16:24:09] [Render thread/INFO] (Charm) [ConfigHelper] In module StackableStews: setting `Stack size` to `16`
+[16:24:09] [Render thread/INFO] (Charm) [ConfigHelper] In module StackableStews: setting `Enable suspicious stew` to `false`
+[16:24:09] [Render thread/INFO] (Charm) [ConfigHelper] In module StraysDropBlueIce: setting `Maximum drops` to `2`
+[16:24:09] [Render thread/INFO] (Charm) [ConfigHelper] In module TotemOfPreserving: setting `Grave mode` to `true`
+[16:24:09] [Render thread/INFO] (Charm) [ConfigHelper] In module TotemOfPreserving: setting `Owner only` to `false`
+[16:24:09] [Render thread/INFO] (Charm) [ConfigHelper] In module TotemOfPreserving: setting `Mobs drop totems` to `[entities/witch, entities/pillager]`
+[16:24:09] [Render thread/INFO] (Charm) [ConfigHelper] In module TotemOfPreserving: setting `Chests contain totems` to `[chests/pillager_outpost, chests/woodland_mansion]`
+[16:24:09] [Render thread/INFO] (Charm) [ConfigHelper] In module TotemOfPreserving: setting `Preserve XP` to `false`
+[16:24:09] [Render thread/INFO] (Charm) [ConfigHelper] In module TotemOfPreserving: setting `Show death position` to `false`
+[16:24:09] [Render thread/INFO] (Charm) [ConfigHelper] In module VariantMobTextures: setting `Variant cows` to `true`
+[16:24:09] [Render thread/INFO] (Charm) [ConfigHelper] In module VariantMobTextures: setting `Variant chickens` to `true`
+[16:24:09] [Render thread/INFO] (Charm) [ConfigHelper] In module VariantMobTextures: setting `Variant dolphins` to `true`
+[16:24:09] [Render thread/INFO] (Charm) [ConfigHelper] In module VariantMobTextures: setting `Variant pigs` to `true`
+[16:24:09] [Render thread/INFO] (Charm) [ConfigHelper] In module VariantMobTextures: setting `Variant sheep` to `true`
+[16:24:09] [Render thread/INFO] (Charm) [ConfigHelper] In module VariantMobTextures: setting `Variant snow golems` to `true`
+[16:24:09] [Render thread/INFO] (Charm) [ConfigHelper] In module VariantMobTextures: setting `Variant squids` to `true`
+[16:24:09] [Render thread/INFO] (Charm) [ConfigHelper] In module VariantMobTextures: setting `Variant turtles` to `true`
+[16:24:09] [Render thread/INFO] (Charm) [ConfigHelper] In module VariantMobTextures: setting `Variant wolves` to `true`
+[16:24:09] [Render thread/INFO] (Charm) [ConfigHelper] In module VariantMobTextures: setting `Variant wandering traders` to `true`
+[16:24:09] [Render thread/INFO] (Charm) [ConfigHelper] In module VariantMobTextures: setting `Rare variants` to `true`
+[16:24:09] [Render thread/INFO] (Charm) [ConfigHelper] In module VariantMobTextures: setting `Rarity of rare variants` to `1000`
+[16:24:09] [Render thread/INFO] (Charm) [ConfigHelper] In module WeatheringIron: setting `Faces increase weathering` to `true`
+[16:24:09] [Render thread/INFO] (Charm) [ConfigHelper] In module WeatheringIron: setting `Face multiplier` to `0.008`
+[16:24:09] [Render thread/INFO] (Charm) [ConfigHelper] In module WeatheringIron: setting `Weathering chance` to `0.006`
+[16:24:09] [Render thread/INFO] (Charm) [ConfigHelper] In module WeatheringIron: setting `Bubble column chance multiplier` to `4.0`
+[16:24:09] [Render thread/INFO] (Charm) [ConfigHelper] In module WitchesDropLuck: setting `Drop chance` to `0.05`
+[16:24:09] [Render thread/INFO] (Charm) [ConfigHelper] Written config to disk
+[16:24:09] [Render thread/INFO] (Charm) [ModuleLoader] Registering Core
+[16:24:09] [Render thread/INFO] (Charm) [ModuleLoader] Registering VariantBarrels
+[16:24:09] [Render thread/INFO] (Charm) [ModuleLoader] Registering VariantChests
+[16:24:09] [Render thread/INFO] (Charm) [ModuleLoader] Registering ExtraBoats
+[16:24:09] [Render thread/INFO] (Charm) [ModuleLoader] Registering Woodcutters
+[16:24:09] [Render thread/INFO] (Charm) [ModuleLoader] Registering AerialAffinityEnchantment
+[16:24:09] [Render thread/INFO] (Charm) [ModuleLoader] Registering AllowTooExpensive
+[16:24:09] [Render thread/INFO] (Charm) [ModuleLoader] Registering AmethystNoteBlock
+[16:24:09] [Render thread/INFO] (Charm) [ModuleLoader] Registering Atlases
+[16:24:09] [Render thread/INFO] (Charm) [ModuleLoader] Registering AutoRestock
+[16:24:09] [Render thread/INFO] (Charm) [ModuleLoader] Registering AutomaticRecipeUnlock
+[16:24:09] [Render thread/INFO] (Charm) [ModuleLoader] Registering AzaleaWood
+[16:24:09] [Render thread/INFO] (Charm) [ModuleLoader] Registering BatBuckets
+[16:24:09] [Render thread/INFO] (Charm) [ModuleLoader] Registering BeaconsHealMobs
+[16:24:09] [Render thread/INFO] (Charm) [ModuleLoader] Registering Beekeepers
+[16:24:09] [Render thread/INFO] (Charm) [ModuleLoader] Registering BlockOfEnderPearls
+[16:24:09] [Render thread/INFO] (Charm) [ModuleLoader] Registering BlockOfGunpowder
+[16:24:09] [Render thread/INFO] (Charm) [ModuleLoader] Registering BlockOfSugar
+[16:24:09] [Render thread/INFO] (Charm) [ModuleLoader] Registering Bookcases
+[16:24:09] [Render thread/INFO] (Charm) [ModuleLoader] Registering BumblezoneIntegration
+[16:24:09] [Render thread/INFO] (Charm) [ModuleLoader] Registering CaveSpidersDropCobwebs
+[16:24:09] [Render thread/INFO] (Charm) [ModuleLoader] Registering Chairs
+[16:24:09] [Render thread/INFO] (Charm) [ModuleLoader] Registering ChickensDropFeathers
+[16:24:09] [Render thread/INFO] (Charm) [ModuleLoader] Registering ClearItemFrames
+[16:24:09] [Render thread/INFO] (Charm) [ModuleLoader] Registering CollectionEnchantment
+[16:24:09] [Render thread/INFO] (Charm) [ModuleLoader] Registering ColoredBundles
+[16:24:09] [Render thread/INFO] (Charm) [ModuleLoader] Registering ColoredNetherPortals
+[16:24:09] [Render thread/INFO] (Charm) [ModuleLoader] Registering CompassOverlay
+[16:24:09] [Render thread/INFO] (Charm) [ModuleLoader] Registering CoralSeaLanterns
+[16:24:09] [Render thread/INFO] (Charm) [ModuleLoader] Registering CoralSquids
+[16:24:09] [Render thread/INFO] (Charm) [ModuleLoader] Registering DiscsStopBackgroundMusic
+[16:24:09] [Render thread/INFO] (Charm) [ModuleLoader] Registering EbonyWood
+[16:24:09] [Render thread/INFO] (Charm) [ModuleLoader] Registering EditableSigns
+[16:24:09] [Render thread/INFO] (Charm) [ModuleLoader] Registering EndermitePowder
+[16:24:09] [Render thread/INFO] (Charm) [ModuleLoader] Registering ExtraRecipes
+[16:24:09] [Render thread/INFO] (Charm) [ModuleLoader] Registering ExtraTrades
+[16:24:09] [Render thread/INFO] (Charm) [ModuleLoader] Registering ExtraWanderingTrades
+[16:24:09] [Render thread/INFO] (Charm) [ModuleLoader] Registering ExtractEnchantments
+[16:24:09] [Render thread/INFO] (Charm) [ModuleLoader] Registering GentlePotionParticles
+[16:24:09] [Render thread/INFO] (Charm) [ModuleLoader] Registering GoatsDropMutton
+[16:24:09] [Render thread/INFO] (Charm) [ModuleLoader] Registering GrindableArmor
+[16:24:09] [Render thread/INFO] (Charm) [ModuleLoader] Registering HoverSorting
+[16:24:09] [Render thread/INFO] (Charm) [ModuleLoader] Registering HusksDropSand
+[16:24:09] [Render thread/INFO] (Charm) [ModuleLoader] Registering HusksSpawnUnderground
+[16:24:09] [Render thread/INFO] (Charm) [ModuleLoader] Registering ImprovedFortressLoot
+[16:24:09] [Render thread/INFO] (Charm) [ModuleLoader] Registering ImprovedMansionLoot
+[16:24:09] [Render thread/INFO] (Charm) [ModuleLoader] Registering ImprovedMineshafts
+[16:24:09] [Render thread/INFO] (Charm) [ModuleLoader] Registering InventoryTidying
+[16:24:09] [Render thread/INFO] (Charm) [ModuleLoader] Registering Kilns
+[16:24:09] [Render thread/INFO] (Charm) [ModuleLoader] Registering LavaBucketDestroysItems
+[16:24:09] [Render thread/INFO] (Charm) [ModuleLoader] Registering LowerNoteblockPitch
+[16:24:09] [Render thread/INFO] (Charm) [ModuleLoader] Registering Lumberjacks
+[16:24:09] [Render thread/INFO] (Charm) [ModuleLoader] Registering MapTooltip
+[16:24:09] [Render thread/INFO] (Charm) [ModuleLoader] Registering Mooblooms
+[16:24:09] [Render thread/INFO] (Charm) [ModuleLoader] Registering MorePortalFrames
+[16:24:09] [Render thread/INFO] (Charm) [ModuleLoader] Registering NoChatVerifiedNag
+[16:24:09] [Render thread/INFO] (Charm) [ModuleLoader] Registering NoCropTrampling
+[16:24:09] [Render thread/INFO] (Charm) [ModuleLoader] Registering NoCuredVillagerDiscount
+[16:24:09] [Render thread/INFO] (Charm) [ModuleLoader] Registering NoNitwits
+[16:24:09] [Render thread/INFO] (Charm) [ModuleLoader] Registering NoPetDamage
+[16:24:09] [Render thread/INFO] (Charm) [ModuleLoader] Registering NoPotionGlint
+[16:24:09] [Render thread/INFO] (Charm) [ModuleLoader] Registering NoSpyglassScope
+[16:24:09] [Render thread/INFO] (Charm) [ModuleLoader] Registering NoTreasureEnchantmentTrading
+[16:24:09] [Render thread/INFO] (Charm) [ModuleLoader] Registering OpenBothDoors
+[16:24:09] [Render thread/INFO] (Charm) [ModuleLoader] Registering ParrotsStayOnShoulder
+[16:24:09] [Render thread/INFO] (Charm) [ModuleLoader] Registering PathToDirt
+[16:24:09] [Render thread/INFO] (Charm) [ModuleLoader] Registering PlayerPressurePlates
+[16:24:09] [Render thread/INFO] (Charm) [ModuleLoader] Registering PortableCrafting
+[16:24:09] [Render thread/INFO] (Charm) [ModuleLoader] Registering QuickReplant
+[16:24:09] [Render thread/INFO] (Charm) [ModuleLoader] Registering RaidHorns
+[16:24:09] [Render thread/INFO] (Charm) [ModuleLoader] Registering RedstoneLanterns
+[16:24:09] [Render thread/INFO] (Charm) [ModuleLoader] Registering RedstoneSand
+[16:24:09] [Render thread/INFO] (Charm) [ModuleLoader] Registering RepairElytraFromLeather
+[16:24:09] [Render thread/INFO] (Charm) [ModuleLoader] Registering RepairNetheriteFromScrap
+[16:24:09] [Render thread/INFO] (Charm) [ModuleLoader] Registering RepairTridentsFromShards
+[16:24:09] [Render thread/INFO] (Charm) [ModuleLoader] Registering RespawnAnchorInTheEnd
+[16:24:09] [Render thread/INFO] (Charm) [ModuleLoader] Registering ShowRepairCost
+[16:24:09] [Render thread/INFO] (Charm) [ModuleLoader] Registering ShulkerBoxDragDrop
+[16:24:09] [Render thread/INFO] (Charm) [ModuleLoader] Registering ShulkerBoxTooltip
+[16:24:09] [Render thread/INFO] (Charm) [ModuleLoader] Registering SmoothGlowstone
+[16:24:09] [Render thread/INFO] (Charm) [ModuleLoader] Registering SnowAccumulation
+[16:24:09] [Render thread/INFO] (Charm) [ModuleLoader] Registering StackableEnchantedBooks
+[16:24:09] [Render thread/INFO] (Charm) [ModuleLoader] Registering StackablePotions
+[16:24:09] [Render thread/INFO] (Charm) [ModuleLoader] Registering StackableStews
+[16:24:09] [Render thread/INFO] (Charm) [ModuleLoader] Registering StraysDropBlueIce
+[16:24:09] [Render thread/INFO] (Charm) [ModuleLoader] Registering StraysSpawnUnderground
+[16:24:09] [Render thread/INFO] (Charm) [ModuleLoader] Registering StrongerAnvils
+[16:24:09] [Render thread/INFO] (Charm) [ModuleLoader] Registering TotemOfPreserving
+[16:24:09] [Render thread/INFO] (Charm) [ModuleLoader] Registering TotemWorksFromInventory
+[16:24:09] [Render thread/INFO] (Charm) [ModuleLoader] Registering VariantBars
+[16:24:09] [Render thread/INFO] (Charm) [ModuleLoader] Registering VariantBookshelves
+[16:24:09] [Render thread/INFO] (Charm) [ModuleLoader] Registering VariantChains
+[16:24:09] [Render thread/INFO] (Charm) [ModuleLoader] Registering VariantLadders
+[16:24:09] [Render thread/INFO] (Charm) [ModuleLoader] Registering VariantLanterns
+[16:24:09] [Render thread/INFO] (Charm) [ModuleLoader] Registering VariantMobTextures
+[16:24:09] [Render thread/INFO] (Charm) [ModuleLoader] Registering VillagersFollowEmeraldBlocks
+[16:24:09] [Render thread/INFO] (Charm) [ModuleLoader] Registering WeatheringIron
+[16:24:09] [Render thread/INFO] (Charm) [ModuleLoader] Registering WitchesDropLuck
+[16:24:09] [Render thread/INFO] (Charm) [ModuleLoader] Enabled AerialAffinityEnchantment
+[16:24:09] [Render thread/INFO] (Charm) [ModuleLoader] Enabled AllowTooExpensive
+[16:24:09] [Render thread/INFO] (Charm) [ModuleLoader] Enabled AmethystNoteBlock
+[16:24:09] [Render thread/INFO] (Charm) [ModuleLoader] Enabled Atlases
+[16:24:09] [Render thread/INFO] (Charm) [ModuleLoader] Enabled AutoRestock
+[16:24:09] [Render thread/WARN] (Charm) [ModuleLoader] Disabled in configuration: AutomaticRecipeUnlock
+[16:24:09] [Render thread/INFO] (Charm) [ModuleLoader] Enabled AzaleaWood
+[16:24:09] [Render thread/INFO] (Charm) [ModuleLoader] Enabled BatBuckets
+[16:24:09] [Render thread/INFO] (Charm) [ModuleLoader] Enabled BeaconsHealMobs
+[16:24:09] [Render thread/INFO] (Charm) [ModuleLoader] Enabled Beekeepers
+[16:24:09] [Render thread/INFO] (Charm) [ModuleLoader] Enabled BlockOfEnderPearls
+[16:24:09] [Render thread/INFO] (Charm) [ModuleLoader] Enabled BlockOfGunpowder
+[16:24:09] [Render thread/INFO] (Charm) [ModuleLoader] Enabled BlockOfSugar
+[16:24:09] [Render thread/INFO] (Charm) [ModuleLoader] Enabled Bookcases
+[16:24:09] [Render thread/WARN] (Charm) [ModuleLoader] Failed dependency check: BumblezoneIntegration
+[16:24:09] [Render thread/INFO] (Charm) [ModuleLoader] Enabled CaveSpidersDropCobwebs
+[16:24:09] [Render thread/INFO] (Charm) [ModuleLoader] Enabled Chairs
+[16:24:09] [Render thread/INFO] (Charm) [ModuleLoader] Enabled ChickensDropFeathers
+[16:24:09] [Render thread/INFO] (Charm) [ModuleLoader] Enabled ClearItemFrames
+[16:24:09] [Render thread/INFO] (Charm) [ModuleLoader] Enabled CollectionEnchantment
+[16:24:09] [Render thread/INFO] (Charm) [ModuleLoader] Enabled ColoredBundles
+[16:24:09] [Render thread/INFO] (Charm) [ModuleLoader] Enabled ColoredNetherPortals
+[16:24:09] [Render thread/INFO] (Charm) [ModuleLoader] Enabled CompassOverlay
+[16:24:09] [Render thread/INFO] (Charm) [ModuleLoader] Enabled CoralSeaLanterns
+[16:24:09] [Render thread/INFO] (Charm) [ModuleLoader] Enabled CoralSquids
+[16:24:09] [Render thread/INFO] (Charm) [ModuleLoader] Enabled Core
+[16:24:09] [Render thread/INFO] (Charm) [ModuleLoader] Enabled DiscsStopBackgroundMusic
+[16:24:09] [Render thread/INFO] (Charm) [ModuleLoader] Enabled EbonyWood
+[16:24:09] [Render thread/INFO] (Charm) [ModuleLoader] Enabled EditableSigns
+[16:24:09] [Render thread/INFO] (Charm) [ModuleLoader] Enabled EndermitePowder
+[16:24:09] [Render thread/INFO] (Charm) [ModuleLoader] Enabled ExtraBoats
+[16:24:09] [Render thread/INFO] (Charm) [ModuleLoader] Enabled ExtraRecipes
+[16:24:09] [Render thread/INFO] (Charm) [ModuleLoader] Enabled ExtraTrades
+[16:24:09] [Render thread/INFO] (Charm) [ModuleLoader] Enabled ExtraWanderingTrades
+[16:24:09] [Render thread/INFO] (Charm) [ModuleLoader] Enabled ExtractEnchantments
+[16:24:09] [Render thread/INFO] (Charm) [ModuleLoader] Enabled GentlePotionParticles
+[16:24:09] [Render thread/INFO] (Charm) [ModuleLoader] Enabled GoatsDropMutton
+[16:24:09] [Render thread/INFO] (Charm) [ModuleLoader] Enabled GrindableArmor
+[16:24:09] [Render thread/INFO] (Charm) [ModuleLoader] Enabled HoverSorting
+[16:24:09] [Render thread/INFO] (Charm) [ModuleLoader] Enabled HusksDropSand
+[16:24:09] [Render thread/INFO] (Charm) [ModuleLoader] Enabled HusksSpawnUnderground
+[16:24:09] [Render thread/INFO] (Charm) [ModuleLoader] Enabled ImprovedFortressLoot
+[16:24:09] [Render thread/INFO] (Charm) [ModuleLoader] Enabled ImprovedMansionLoot
+[16:24:09] [Render thread/INFO] (Charm) [ModuleLoader] Enabled ImprovedMineshafts
+[16:24:09] [Render thread/INFO] (Charm) [ModuleLoader] Enabled InventoryTidying
+[16:24:09] [Render thread/INFO] (Charm) [ModuleLoader] Enabled Kilns
+[16:24:09] [Render thread/INFO] (Charm) [ModuleLoader] Enabled LavaBucketDestroysItems
+[16:24:09] [Render thread/INFO] (Charm) [ModuleLoader] Enabled LowerNoteblockPitch
+[16:24:09] [Render thread/INFO] (Charm) [ModuleLoader] Enabled Lumberjacks
+[16:24:09] [Render thread/INFO] (Charm) [ModuleLoader] Enabled MapTooltip
+[16:24:09] [Render thread/INFO] (Charm) [ModuleLoader] Enabled Mooblooms
+[16:24:09] [Render thread/INFO] (Charm) [ModuleLoader] Enabled MorePortalFrames
+[16:24:09] [Render thread/WARN] (Charm) [ModuleLoader] Disabled in configuration: NoChatVerifiedNag
+[16:24:09] [Render thread/INFO] (Charm) [ModuleLoader] Enabled NoCropTrampling
+[16:24:09] [Render thread/WARN] (Charm) [ModuleLoader] Disabled in configuration: NoCuredVillagerDiscount
+[16:24:09] [Render thread/WARN] (Charm) [ModuleLoader] Disabled in configuration: NoNitwits
+[16:24:09] [Render thread/INFO] (Charm) [ModuleLoader] Enabled NoPetDamage
+[16:24:09] [Render thread/INFO] (Charm) [ModuleLoader] Enabled NoPotionGlint
+[16:24:09] [Render thread/INFO] (Charm) [ModuleLoader] Enabled NoSpyglassScope
+[16:24:09] [Render thread/WARN] (Charm) [ModuleLoader] Disabled in configuration: NoTreasureEnchantmentTrading
+[16:24:09] [Render thread/INFO] (Charm) [ModuleLoader] Enabled OpenBothDoors
+[16:24:09] [Render thread/INFO] (Charm) [ModuleLoader] Enabled ParrotsStayOnShoulder
+[16:24:09] [Render thread/INFO] (Charm) [ModuleLoader] Enabled PathToDirt
+[16:24:09] [Render thread/INFO] (Charm) [ModuleLoader] Enabled PlayerPressurePlates
+[16:24:09] [Render thread/INFO] (Charm) [ModuleLoader] Enabled PortableCrafting
+[16:24:09] [Render thread/INFO] (Charm) [ModuleLoader] Enabled QuickReplant
+[16:24:09] [Render thread/INFO] (Charm) [ModuleLoader] Enabled RaidHorns
+[16:24:09] [Render thread/INFO] (Charm) [ModuleLoader] Enabled RedstoneLanterns
+[16:24:09] [Render thread/INFO] (Charm) [ModuleLoader] Enabled RedstoneSand
+[16:24:09] [Render thread/INFO] (Charm) [ModuleLoader] Enabled RepairElytraFromLeather
+[16:24:09] [Render thread/INFO] (Charm) [ModuleLoader] Enabled RepairNetheriteFromScrap
+[16:24:09] [Render thread/INFO] (Charm) [ModuleLoader] Enabled RepairTridentsFromShards
+[16:24:09] [Render thread/WARN] (Charm) [ModuleLoader] Disabled in configuration: RespawnAnchorInTheEnd
+[16:24:09] [Render thread/INFO] (Charm) [ModuleLoader] Enabled ShowRepairCost
+[16:24:09] [Render thread/INFO] (Charm) [ModuleLoader] Enabled ShulkerBoxDragDrop
+[16:24:09] [Render thread/INFO] (Charm) [ModuleLoader] Enabled ShulkerBoxTooltip
+[16:24:09] [Render thread/INFO] (Charm) [ModuleLoader] Enabled SmoothGlowstone
+[16:24:09] [Render thread/INFO] (Charm) [ModuleLoader] Enabled SnowAccumulation
+[16:24:09] [Render thread/INFO] (Charm) [ModuleLoader] Enabled StackableEnchantedBooks
+[16:24:09] [Render thread/INFO] (Charm) [ModuleLoader] Enabled StackablePotions
+[16:24:09] [Render thread/INFO] (Charm) [ModuleLoader] Enabled StackableStews
+[16:24:09] [Render thread/INFO] (Charm) [ModuleLoader] Enabled StraysDropBlueIce
+[16:24:09] [Render thread/INFO] (Charm) [ModuleLoader] Enabled StraysSpawnUnderground
+[16:24:09] [Render thread/INFO] (Charm) [ModuleLoader] Enabled StrongerAnvils
+[16:24:09] [Render thread/INFO] (Charm) [ModuleLoader] Enabled TotemOfPreserving
+[16:24:09] [Render thread/INFO] (Charm) [ModuleLoader] Enabled TotemWorksFromInventory
+[16:24:09] [Render thread/INFO] (Charm) [ModuleLoader] Enabled VariantBarrels
+[16:24:09] [Render thread/INFO] (Charm) [ModuleLoader] Enabled VariantBars
+[16:24:09] [Render thread/INFO] (Charm) [ModuleLoader] Enabled VariantBookshelves
+[16:24:09] [Render thread/INFO] (Charm) [ModuleLoader] Enabled VariantChains
+[16:24:09] [Render thread/INFO] (Charm) [ModuleLoader] Enabled VariantChests
+[16:24:09] [Render thread/INFO] (Charm) [ModuleLoader] Enabled VariantLadders
+[16:24:09] [Render thread/INFO] (Charm) [ModuleLoader] Enabled VariantLanterns
+[16:24:09] [Render thread/INFO] (Charm) [ModuleLoader] Enabled VariantMobTextures
+[16:24:09] [Render thread/INFO] (Charm) [ModuleLoader] Enabled VillagersFollowEmeraldBlocks
+[16:24:09] [Render thread/INFO] (Charm) [ModuleLoader] Enabled WeatheringIron
+[16:24:09] [Render thread/INFO] (Charm) [ModuleLoader] Enabled WitchesDropLuck
+[16:24:09] [Render thread/INFO] (Charm) [ModuleLoader] Enabled Woodcutters
+[16:24:09] [Render thread/INFO] (Charm) [ModuleLoader] Running AerialAffinityEnchantment
+[16:24:09] [Render thread/INFO] (Charm) [ModuleLoader] Running AllowTooExpensive
+[16:24:09] [Render thread/INFO] (Charm) [ModuleLoader] Running AmethystNoteBlock
+[16:24:09] [Render thread/INFO] (Charm) [ModuleLoader] Running Atlases
+[16:24:09] [Render thread/INFO] (Charm) [ModuleLoader] Running AutoRestock
+[16:24:09] [Render thread/INFO] (Charm) [ModuleLoader] Running AzaleaWood
+[16:24:09] [Render thread/INFO] (Charm) [ModuleLoader] Running BatBuckets
+[16:24:09] [Render thread/INFO] (Charm) [ModuleLoader] Running BeaconsHealMobs
+[16:24:09] [Render thread/INFO] (Charm) [ModuleLoader] Running Beekeepers
+[16:24:09] [Render thread/INFO] (Charm) [ModuleLoader] Running BlockOfEnderPearls
+[16:24:09] [Render thread/INFO] (Charm) [ModuleLoader] Running BlockOfGunpowder
+[16:24:09] [Render thread/INFO] (Charm) [ModuleLoader] Running BlockOfSugar
+[16:24:09] [Render thread/INFO] (Charm) [ModuleLoader] Running Bookcases
+[16:24:09] [Render thread/INFO] (Charm) [ModuleLoader] Running CaveSpidersDropCobwebs
+[16:24:09] [Render thread/INFO] (Charm) [ModuleLoader] Running Chairs
+[16:24:09] [Render thread/INFO] (Charm) [ModuleLoader] Running ChickensDropFeathers
+[16:24:09] [Render thread/INFO] (Charm) [ModuleLoader] Running ClearItemFrames
+[16:24:09] [Render thread/INFO] (Charm) [ModuleLoader] Running CollectionEnchantment
+[16:24:09] [Render thread/INFO] (Charm) [ModuleLoader] Running ColoredBundles
+[16:24:09] [Render thread/INFO] (Charm) [ModuleLoader] Running ColoredNetherPortals
+[16:24:09] [Render thread/INFO] (Charm) [ModuleLoader] Running CompassOverlay
+[16:24:09] [Render thread/INFO] (Charm) [ModuleLoader] Running CoralSeaLanterns
+[16:24:09] [Render thread/INFO] (Charm) [ModuleLoader] Running CoralSquids
+[16:24:09] [Render thread/INFO] (Charm) [ModuleLoader] Running Core
+[16:24:09] [Render thread/INFO] (Charm) [ModuleLoader] Running DiscsStopBackgroundMusic
+[16:24:09] [Render thread/INFO] (Charm) [ModuleLoader] Running EbonyWood
+[16:24:09] [Render thread/INFO] (Charm) [ModuleLoader] Running EditableSigns
+[16:24:09] [Render thread/INFO] (Charm) [ModuleLoader] Running EndermitePowder
+[16:24:09] [Render thread/INFO] (Charm) [ModuleLoader] Running ExtraBoats
+[16:24:09] [Render thread/INFO] (Charm) [ModuleLoader] Running ExtraRecipes
+[16:24:09] [Render thread/INFO] (Charm) [ModuleLoader] Running ExtraTrades
+[16:24:09] [Render thread/INFO] (Charm) [ModuleLoader] Running ExtraWanderingTrades
+[16:24:09] [Render thread/INFO] (Charm) [ExtraWanderingTrades] normal: gray_bundle, count: 1, cost: 6
+[16:24:09] [Render thread/INFO] (Charm) [ExtraWanderingTrades] normal: black_bundle, count: 1, cost: 6
+[16:24:09] [Render thread/INFO] (Charm) [ExtraWanderingTrades] normal: sugar_block, count: 1, cost: 5
+[16:24:09] [Render thread/INFO] (Charm) [ExtraWanderingTrades] normal: yellow_bundle, count: 1, cost: 6
+[16:24:09] [Render thread/INFO] (Charm) [ExtraWanderingTrades] normal: atlas, count: 1, cost: 5
+[16:24:09] [Render thread/INFO] (Charm) [ExtraWanderingTrades] normal: gunpowder_block, count: 1, cost: 5
+[16:24:09] [Render thread/INFO] (Charm) [ExtraWanderingTrades] normal: orange_bundle, count: 1, cost: 6
+[16:24:09] [Render thread/INFO] (Charm) [ExtraWanderingTrades] normal: red_bundle, count: 1, cost: 6
+[16:24:09] [Render thread/INFO] (Charm) [ExtraWanderingTrades] normal: blue_bundle, count: 1, cost: 6
+[16:24:09] [Render thread/INFO] (Charm) [ExtraWanderingTrades] normal: lime_bundle, count: 1, cost: 6
+[16:24:09] [Render thread/INFO] (Charm) [ExtraWanderingTrades] normal: azalea_log, count: 8, cost: 5
+[16:24:09] [Render thread/INFO] (Charm) [ExtraWanderingTrades] normal: magenta_bundle, count: 1, cost: 6
+[16:24:09] [Render thread/INFO] (Charm) [ExtraWanderingTrades] normal: light_blue_bundle, count: 1, cost: 6
+[16:24:09] [Render thread/INFO] (Charm) [ExtraWanderingTrades] normal: green_bundle, count: 1, cost: 6
+[16:24:09] [Render thread/INFO] (Charm) [ExtraWanderingTrades] normal: light_gray_bundle, count: 1, cost: 6
+[16:24:09] [Render thread/INFO] (Charm) [ExtraWanderingTrades] normal: purple_bundle, count: 1, cost: 6
+[16:24:09] [Render thread/INFO] (Charm) [ExtraWanderingTrades] normal: pink_bundle, count: 1, cost: 6
+[16:24:09] [Render thread/INFO] (Charm) [ExtraWanderingTrades] normal: white_bundle, count: 1, cost: 6
+[16:24:09] [Render thread/INFO] (Charm) [ExtraWanderingTrades] normal: cyan_bundle, count: 1, cost: 6
+[16:24:09] [Render thread/INFO] (Charm) [ExtraWanderingTrades] normal: brown_bundle, count: 1, cost: 6
+[16:24:09] [Render thread/INFO] (Charm) [ExtraWanderingTrades] rare: item.charm.bat_bucket, count: 1, cost: 8
+[16:24:09] [Render thread/INFO] (Charm) [ExtraWanderingTrades] rare: bat_bucket, count: 1, cost: 8
+[16:24:09] [Render thread/INFO] (Charm) [ExtraWanderingTrades] rare: block.charm.ebony_sapling, count: 1, cost: 15
+[16:24:09] [Render thread/INFO] (Charm) [ExtraWanderingTrades] rare: ebony_sapling, count: 1, cost: 15
+[16:24:09] [Render thread/INFO] (Charm) [ExtraWanderingTrades] rare: block.charm.tube_sea_lantern, count: 3, cost: 10
+[16:24:09] [Render thread/INFO] (Charm) [ExtraWanderingTrades] rare: tube_sea_lantern, count: 3, cost: 10
+[16:24:09] [Render thread/INFO] (Charm) [ExtraWanderingTrades] rare: block.charm.brain_sea_lantern, count: 3, cost: 10
+[16:24:09] [Render thread/INFO] (Charm) [ExtraWanderingTrades] rare: brain_sea_lantern, count: 3, cost: 10
+[16:24:09] [Render thread/INFO] (Charm) [ExtraWanderingTrades] rare: block.charm.ender_pearl_block, count: 1, cost: 8
+[16:24:09] [Render thread/INFO] (Charm) [ExtraWanderingTrades] rare: ender_pearl_block, count: 1, cost: 8
+[16:24:09] [Render thread/INFO] (Charm) [ExtraWanderingTrades] rare: block.charm.fire_sea_lantern, count: 3, cost: 10
+[16:24:09] [Render thread/INFO] (Charm) [ExtraWanderingTrades] rare: fire_sea_lantern, count: 3, cost: 10
+[16:24:09] [Render thread/INFO] (Charm) [ExtraWanderingTrades] rare: item.charm.coral_squid_bucket, count: 1, cost: 10
+[16:24:09] [Render thread/INFO] (Charm) [ExtraWanderingTrades] rare: coral_squid_bucket, count: 1, cost: 10
+[16:24:09] [Render thread/INFO] (Charm) [ExtraWanderingTrades] rare: block.charm.bubble_sea_lantern, count: 3, cost: 10
+[16:24:09] [Render thread/INFO] (Charm) [ExtraWanderingTrades] rare: bubble_sea_lantern, count: 3, cost: 10
+[16:24:09] [Render thread/INFO] (Charm) [ExtraWanderingTrades] rare: block.charm.horn_sea_lantern, count: 3, cost: 10
+[16:24:09] [Render thread/INFO] (Charm) [ExtraWanderingTrades] rare: horn_sea_lantern, count: 3, cost: 10
+[16:24:09] [Render thread/INFO] (Charm) [ExtraWanderingTrades] rare: item.charm.endermite_powder, count: 3, cost: 12
+[16:24:09] [Render thread/INFO] (Charm) [ExtraWanderingTrades] rare: endermite_powder, count: 3, cost: 12
+[16:24:09] [Render thread/INFO] (Charm) [ModuleLoader] Running ExtractEnchantments
+[16:24:09] [Render thread/INFO] (Charm) [ModuleLoader] Running GentlePotionParticles
+[16:24:09] [Render thread/INFO] (Charm) [ModuleLoader] Running GoatsDropMutton
+[16:24:09] [Render thread/INFO] (Charm) [ModuleLoader] Running GrindableArmor
+[16:24:09] [Render thread/INFO] (Charm) [ModuleLoader] Running HoverSorting
+[16:24:09] [Render thread/INFO] (Charm) [ModuleLoader] Running HusksDropSand
+[16:24:09] [Render thread/INFO] (Charm) [ModuleLoader] Running HusksSpawnUnderground
+[16:24:09] [Render thread/INFO] (Charm) [ModuleLoader] Running ImprovedFortressLoot
+[16:24:09] [Render thread/INFO] (Charm) [ModuleLoader] Running ImprovedMansionLoot
+[16:24:09] [Render thread/INFO] (Charm) [ModuleLoader] Running ImprovedMineshafts
+[16:24:09] [Render thread/INFO] (Charm) [ModuleLoader] Running InventoryTidying
+[16:24:09] [Render thread/INFO] (Charm) [ModuleLoader] Running Kilns
+[16:24:09] [Render thread/INFO] (Charm) [ModuleLoader] Running LavaBucketDestroysItems
+[16:24:09] [Render thread/INFO] (Charm) [ModuleLoader] Running LowerNoteblockPitch
+[16:24:09] [Render thread/INFO] (Charm) [ModuleLoader] Running Lumberjacks
+[16:24:09] [Render thread/INFO] (Charm) [ModuleLoader] Running MapTooltip
+[16:24:09] [Render thread/INFO] (Charm) [ModuleLoader] Running Mooblooms
+[16:24:09] [Render thread/INFO] (Charm) [ModuleLoader] Running MorePortalFrames
+[16:24:09] [Render thread/INFO] (Charm) [ModuleLoader] Running NoCropTrampling
+[16:24:09] [Render thread/INFO] (Charm) [ModuleLoader] Running NoPetDamage
+[16:24:09] [Render thread/INFO] (Charm) [ModuleLoader] Running NoPotionGlint
+[16:24:09] [Render thread/INFO] (Charm) [ModuleLoader] Running NoSpyglassScope
+[16:24:09] [Render thread/INFO] (Charm) [ModuleLoader] Running OpenBothDoors
+[16:24:09] [Render thread/INFO] (Charm) [ModuleLoader] Running ParrotsStayOnShoulder
+[16:24:09] [Render thread/INFO] (Charm) [ModuleLoader] Running PathToDirt
+[16:24:09] [Render thread/INFO] (Charm) [ModuleLoader] Running PlayerPressurePlates
+[16:24:09] [Render thread/INFO] (Charm) [ModuleLoader] Running PortableCrafting
+[16:24:09] [Render thread/INFO] (Charm) [ModuleLoader] Running QuickReplant
+[16:24:09] [Render thread/INFO] (Charm) [ModuleLoader] Running RaidHorns
+[16:24:09] [Render thread/INFO] (Charm) [ModuleLoader] Running RedstoneLanterns
+[16:24:09] [Render thread/INFO] (Charm) [ModuleLoader] Running RedstoneSand
+[16:24:09] [Render thread/INFO] (Charm) [ModuleLoader] Running RepairElytraFromLeather
+[16:24:10] [Render thread/INFO] (Charm) [ModuleLoader] Running RepairNetheriteFromScrap
+[16:24:10] [Render thread/INFO] (Charm) [ModuleLoader] Running RepairTridentsFromShards
+[16:24:10] [Render thread/INFO] (Charm) [ModuleLoader] Running ShowRepairCost
+[16:24:10] [Render thread/INFO] (Charm) [ModuleLoader] Running ShulkerBoxDragDrop
+[16:24:10] [Render thread/INFO] (Minecraft) [STDOUT]: SHULKER BOX BEHAVIOR ADDED!
+[16:24:10] [Render thread/INFO] (Minecraft) [STDOUT]: WORLD LOAD BEHAVIOR ADDED!
+[16:24:10] [Render thread/INFO] (Charm) [ModuleLoader] Running ShulkerBoxTooltip
+[16:24:10] [Render thread/INFO] (Charm) [ModuleLoader] Running SmoothGlowstone
+[16:24:10] [Render thread/INFO] (Charm) [ModuleLoader] Running SnowAccumulation
+[16:24:10] [Render thread/INFO] (Charm) [ModuleLoader] Running StackableEnchantedBooks
+[16:24:10] [Render thread/INFO] (Charm) [ModuleLoader] Running StackablePotions
+[16:24:10] [Render thread/INFO] (Charm) [ModuleLoader] Running StackableStews
+[16:24:10] [Render thread/INFO] (Charm) [ModuleLoader] Running StraysDropBlueIce
+[16:24:10] [Render thread/INFO] (Charm) [ModuleLoader] Running StraysSpawnUnderground
+[16:24:10] [Render thread/INFO] (Charm) [ModuleLoader] Running StrongerAnvils
+[16:24:10] [Render thread/INFO] (Charm) [ModuleLoader] Running TotemOfPreserving
+[16:24:10] [Render thread/INFO] (Charm) [ModuleLoader] Running TotemWorksFromInventory
+[16:24:10] [Render thread/INFO] (Charm) [ModuleLoader] Running VariantBarrels
+[16:24:10] [Render thread/INFO] (Charm) [ModuleLoader] Running VariantBars
+[16:24:10] [Render thread/INFO] (Charm) [ModuleLoader] Running VariantBookshelves
+[16:24:10] [Render thread/INFO] (Charm) [ModuleLoader] Running VariantChains
+[16:24:10] [Render thread/INFO] (Charm) [ModuleLoader] Running VariantChests
+[16:24:10] [Render thread/INFO] (Charm) [ModuleLoader] Running VariantLadders
+[16:24:10] [Render thread/INFO] (Charm) [ModuleLoader] Running VariantLanterns
+[16:24:10] [Render thread/INFO] (Charm) [ModuleLoader] Running VariantMobTextures
+[16:24:10] [Render thread/INFO] (Charm) [ModuleLoader] Running VillagersFollowEmeraldBlocks
+[16:24:10] [Render thread/INFO] (Charm) [ModuleLoader] Running WeatheringIron
+[16:24:10] [Render thread/INFO] (Charm) [ModuleLoader] Running WitchesDropLuck
+[16:24:10] [Render thread/INFO] (Charm) [ModuleLoader] Running Woodcutters
+[16:24:10] [Render thread/INFO] (Charm) [ModuleLoader] Running disabled tasks: AutomaticRecipeUnlock
+[16:24:10] [Render thread/INFO] (Charm) [ModuleLoader] Running disabled tasks: BumblezoneIntegration
+[16:24:10] [Render thread/INFO] (Charm) [ModuleLoader] Running disabled tasks: NoChatVerifiedNag
+[16:24:10] [Render thread/INFO] (Charm) [ModuleLoader] Running disabled tasks: NoCuredVillagerDiscount
+[16:24:10] [Render thread/INFO] (Charm) [ModuleLoader] Running disabled tasks: NoNitwits
+[16:24:10] [Render thread/INFO] (Charm) [ModuleLoader] Running disabled tasks: NoTreasureEnchantmentTrading
+[16:24:10] [Render thread/INFO] (Charm) [ModuleLoader] Running disabled tasks: RespawnAnchorInTheEnd
+[16:24:10] [Render thread/INFO] (Charm) [AdvancementHelper] Adding `charm:no_chat_verified_nag` to list of advancements to remove
+[16:24:10] [Render thread/INFO] (Charm) [AdvancementHelper] Adding `charm:automatic_recipe_unlock` to list of advancements to remove
+[16:24:10] [Render thread/INFO] (Charm) [AdvancementHelper] Adding `charm:bumblezone_integration` to list of advancements to remove
+[16:24:10] [Render thread/INFO] (Charm) [AdvancementHelper] Adding `charm:no_nitwits` to list of advancements to remove
+[16:24:10] [Render thread/INFO] (Charm) [AdvancementHelper] Adding `charm:respawn_anchor_in_the_end` to list of advancements to remove
+[16:24:10] [Render thread/INFO] (Charm) [AdvancementHelper] Adding `charm:no_treasure_enchantment_trading` to list of advancements to remove
+[16:24:10] [Render thread/INFO] (Charm) [AdvancementHelper] Adding `charm:no_cured_villager_discount` to list of advancements to remove
+[16:24:10] [Render thread/INFO] (MM) Definitely not up to no good
+[16:24:10] [Render thread/INFO] (Minecraft) [STDOUT]: OOPS I FUCKED UP SOMEHOW :D
+[16:24:10] [Render thread/INFO] (Minecraft) [STDOUT]: java.lang.ClassNotFoundException: net.gamma02.shulker_fix.CharmCompat.CharmCompatFix net.gamma02.shulker_fix.CharmCompat.CharmCompatFix
